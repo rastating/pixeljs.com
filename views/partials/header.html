@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Pixel.js :: {{title}}</title>
+
+        <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet" />
+        <link href="/static/css/flat-ui.css" rel="stylesheet">
+        <link href="/static/css/app.css" rel="stylesheet" />
+        <link href="/static/css/font-awesome.min.css" rel="stylesheet">
+
+        <link rel="shortcut icon" href="/static/images/favicon.ico">
+        
+        <script src="/static/js/jquery-1.8.3.min.js"></script>
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+        <!--[if lt IE 9]>
+          <script src="/static/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <header class="masthead">
+            <div class="container">
+                <h1 class="headline">Pixel<span>js</h1>
+                <p class="font-16">A simple and flexible HTML5 and JavaScript powered game engine.</p>
+                <p class="jumbo">
+                    <a href="https://github.com/rastating/pixel.js" target="_blank" class="btn btn-inverse btn-large"><strong>View Project on GitHub</strong></a>
+                    <a href="/static/misc/pixel.js.zip" class="btn btn-primary btn-large"><strong>Download Pixel.js </strong><span style="font-size: 11px;">(v0.3b)</span></a>
+                </p>
+                <div>
+                    <div class="container">
+                        <ul class="list-inline">
+                            <li>
+                                <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=rastating&amp;repo=pixel.js&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe>
+                            </li>
+                            <li>
+                                <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=rastating&amp;repo=pixel.js&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe>
+                            </li>
+                            <li class="follow-btn">
+                                <iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/follow_button.1383343979.html#_=1383345305503&amp;id=twitter-widget-1&amp;lang=en&amp;screen_name=iamrastating&amp;show_count=true&amp;show_screen_name=true&amp;size=m" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="width: 220px; height: 20px;"></iframe>
+                            </li>
+                            <li class="tweet-btn hidden-phone">
+                                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://pixeljs.com" data-text="Check out Pixel.js, a free HTML5 game engine!" data-via="iamrastating" data-hashtags="pixeljs">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav nav-tabs">
+                        {{#if pageIsOverview}}
+                            <li class="active">
+                        {{else}}
+                            <li>
+                        {{/if}}
+                            <a href="/">Overview</a>
+                        </li>
+                        
+                        {{#if pageIsAnExample}}
+                            <li class="dropdown active">
+                        {{else}}
+                            <li class="dropdown">
+                        {{/if}}
+                            <a class="dropdown-toggle" data-toggle="dropdown">
+                                Examples
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/examples/coin-collector">Coin Collector</a></li>
+                                <li><a href="/examples/pong">Pong</a></li>
+                            </ul>
+                        </li>
+                        
+                        {{#if pageIsGettingStarted}}
+                            <li class="active">
+                        {{else}}
+                            <li>
+                        {{/if}}
+                            <a href="/getting-started">Getting Started</a>
+                        </li>
+                        
+                        {{#if pageIsDocumentation}}
+                            <li class="active">
+                        {{else}}
+                            <li>
+                        {{/if}}
+                            <a href="/documentation">Documentation</a>
+                        </li>
+                        
+                        {{#if pageIsFAQ}}
+                            <li class="active">
+                        {{else}}
+                            <li>
+                        {{/if}}
+                            <a href="/faq">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>

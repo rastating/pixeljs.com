@@ -1,0 +1,18 @@
+{{>header}}
+
+    <div id="pixeljs" style="position: relative; width: 800px; height: 600px; margin: 0 auto;">
+    </div>
+    
+    <script type="text/javascript" src="/static/examples/pong/game.js"></script>
+    <script>
+        (function($){
+            $("html, body").animate({ scrollTop: $('#pixeljs').offset().top }, 1000);
+        })(jQuery);
+    </script>
+    <style>
+        .scene-layer {
+            z-index: -1;
+        }
+    </style>
+    
+{{>footer}}
