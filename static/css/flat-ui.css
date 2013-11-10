@@ -3760,7 +3760,7 @@ fieldset[disabled] .input-group .input-group-btn:first-child .btn-default.active
 .dropdown-menu {
   background-color: #f3f4f5;
   border: none;
-  display: block;
+  /* display: block; bug */
   margin-top: 8px;
   opacity: 0;
   padding: 0;
