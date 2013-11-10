@@ -1,17 +1,33 @@
 var express = require('express');
 var app = express();
 var hbs = require('hbs');
+var marked = require('marked');
+var documentedClasses = require(__dirname + '/documentation/classes.json');
+
+marked.setOptions({
+    sanitize: true
+});
 
 app.set('view engine', 'html');
 app.engine('html', require('hbs').__express);
 
 app.use('/static', express.static('static'));
 
+var parseMarkdown = function (markdown) {
+    return marked(markdown).trim().replace(/^<p>/, '').replace(/<\/p>$/, '');
+}
+
 hbs.registerPartials('views/partials');
+hbs.registerHelper('parseMarkdown', parseMarkdown);
 
 app.get ('/*', function (req, res, next) {
     if (req.headers.host.match(/^www/) === null ) {
-        res.redirect(301, 'http://www.' + req.headers.host + req.url);
+        if (process.argv.indexOf('debug') === -1) {
+            res.redirect(301, 'http://www.' + req.headers.host + req.url);
+        }
+        else {
+            return next();
+        }
     }
     else {
         return next();
@@ -44,6 +60,32 @@ app.get('/changelog', function (req, res) {
 
 app.get('/documentation', function (req, res) {
     res.render('documentation', { title: 'Documentation', pageIsDocumentation: true });
+});
+
+app.get('/documentation/*', function (req, res) {
+    var regex = new RegExp(/^\/documentation\/([a-zA-Z0-9]+)(\/([a-zA-Z0-9_]+))?$/);
+    var matches = req.url.match(regex);
+    var className = matches[1];
+    var methodName = matches[3];
+    
+    if (className === undefined || documentedClasses.names.indexOf(className) == -1) {
+        res.render('404', { title: 'Uh oh...' });
+    }
+    else {
+        if (methodName === undefined) {
+            var json = require(__dirname + '/documentation/' + className + '/summary.json');
+            
+            res.render('class_documentation', { 
+                title: className + 'Documentation', 
+                pageIsDocumentation: true, 
+                module: json,
+                supportedClasses: documentedClasses.names
+            });
+        }
+        else {
+            
+        }
+    }
 });
 
 app.listen(3000);

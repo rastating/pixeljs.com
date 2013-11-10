@@ -1,0 +1,36 @@
+{
+    "className": "File",
+    
+    "summary": "Provides static methods for the creation, copying, deletion, moving, and opening of files, and aids in the creation of [FileStream](/documentation/FileStream) objects.",
+    
+    "inheritanceHierarchy": [
+        { "name": "System.Object" }, 
+        { "name": "System.IO.File", "isEndPoint": true }
+    ],
+    
+    "remarks": [
+        "Use the File class for typical operations such as copying, moving, renaming, creating, opening, deleting, and appending to files. You can also use the File class to get and set file attributes or DateTime information related to the creation, access, and writing of a file.",
+    
+        "Many of the File methods return other I/O types when you create or open files. You can use these other types to further manipulate a file. For more information, see specific File members such as OpenText, CreateText, or Create."
+    ],
+    
+    "methods": [
+        {
+            "name": "AppendText",
+            "description": "Creates a StreamWriter that appends UTF-8 encoded text to an existing file, or to a new file if the specified file does not exist."
+        },
+        {
+            "name": "Copy",
+            "description": "Copies an existing file to a new file. Overwriting a file of the same name is not allowed."
+        },
+        {
+            "name": "Decrypt",
+            "description": "Decrypts a file that was encrypted by the current account using the [Encrypt](/hur) method."
+        }
+    ],
+    
+    "platforms": {
+        "names": "Windows 8, Windows Server 2012, Windows 7, Windows Vista SP2, Windows Server 2008 (Server Core Role not supported), Windows Server 2008 R2 (Server Core Role supported with SP1 or later; Itanium not supported)",
+        "notes": "The .NET Framework does not support all versions of every platform. For a list of the supported versions, see .NET Framework System Requirements."
+    }
+}
