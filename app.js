@@ -20,7 +20,6 @@ var parseMarkdown = function (markdown) {
 hbs.registerPartials('views/partials');
 hbs.registerHelper('parseMarkdown', parseMarkdown);
 hbs.registerHelper('equal', function(lvalue, rvalue, options) {
-    console.log('comparing ' + lvalue + ' and ' + rvalue);
     if (arguments.length < 3) {
         throw new Error("Handlebars Helper equal needs 2 parameters");
     }
