@@ -4,7 +4,11 @@
             <ul class="nav nav-list nav-list-vivid">
                 <li class="nav-header">Classes &amp; Modules</li>
                 {{#each supportedClasses}}
-                    <li><a href="/documentation/{{this}}">{{this}}</a></li>
+                    {{#equal ../module.className this}}
+                        <li class="active"><a href="/documentation/{{this}}">{{this}}</a></li>
+                    {{else}}
+                        <li><a href="/documentation/{{this}}">{{this}}</a></li>
+                    {{/equal}}
                 {{/each}}
             </ul>
         </div>
@@ -13,7 +17,7 @@
             <p>
                 {{{parseMarkdown module.summary}}}
             </p>
- 
+
             <h4>Inheritance Hierarchy</h4>
             <ul>
                 {{#each module.inheritanceHierarchy}}
@@ -24,7 +28,7 @@
                     {{/if}}
                 {{/each}}
             </ul>
-            
+
             <h4>Methods</h4>
             <table class="table table-bordered table-striped">
                 <thead>
@@ -42,14 +46,14 @@
                     {{/each}}
                 </tbody>
             </table>
-            
+
             <h4>Remarks</h4>
             {{#each module.remarks}}
                 <p>
                     {{{parseMarkdown this}}}
                 </p>
             {{/each}}
-            
+
             <h4>Supported Platforms</h4>
             <p>
                 {{module.platforms.names}}

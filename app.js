@@ -15,10 +15,23 @@ app.use('/static', express.static('static'));
 
 var parseMarkdown = function (markdown) {
     return marked(markdown).trim().replace(/^<p>/, '').replace(/<\/p>$/, '');
-}
+};
 
 hbs.registerPartials('views/partials');
 hbs.registerHelper('parseMarkdown', parseMarkdown);
+hbs.registerHelper('equal', function(lvalue, rvalue, options) {
+    console.log('comparing ' + lvalue + ' and ' + rvalue);
+    if (arguments.length < 3) {
+        throw new Error("Handlebars Helper equal needs 2 parameters");
+    }
+
+    if (lvalue != rvalue) {
+        return options.inverse(this);
+    }
+    else {
+        return options.fn(this);
+    }
+});
 
 app.get ('/*', function (req, res, next) {
     if (req.headers.host.match(/^www/) === null ) {
@@ -67,23 +80,23 @@ app.get('/documentation/*', function (req, res) {
     var matches = req.url.match(regex);
     var className = matches[1];
     var methodName = matches[3];
-    
+
     if (className === undefined || documentedClasses.names.indexOf(className) == -1) {
         res.render('404', { title: 'Uh oh...' });
     }
     else {
         if (methodName === undefined) {
             var json = require(__dirname + '/documentation/' + className + '/summary.json');
-            
-            res.render('class_documentation', { 
-                title: className + 'Documentation', 
-                pageIsDocumentation: true, 
+
+            res.render('class_documentation', {
+                title: className + 'Documentation',
+                pageIsDocumentation: true,
                 module: json,
                 supportedClasses: documentedClasses.names
             });
         }
         else {
-            
+
         }
     }
 });

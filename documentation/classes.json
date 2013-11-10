@@ -1,5 +1,16 @@
 {
     "names": [
-        "File"
+        "AnimatedSprite",
+        "Asset",
+        "Engine",
+        "Entity",
+        "FPSCounter",
+        "Layer",
+        "PixelJS",
+        "Player",
+        "Sound",
+        "Sprite",
+        "SpriteSheet",
+        "Tile"
     ]
 }

@@ -1,0 +1,20 @@
+{
+    "className": "AnimatedSprite",
+
+    "summary": "",
+
+    "inheritanceHierarchy": [
+        { "name": "Asset" },
+        { "name": "AnimatedSprite", "isEndPoint": true }
+    ],
+
+    "remarks": [
+        ""
+    ],
+
+    "methods": [
+    ],
+
+    "platforms": {
+    }
+}
