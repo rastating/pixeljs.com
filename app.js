@@ -88,7 +88,7 @@ app.get('/documentation/*', function (req, res) {
             var json = require(__dirname + '/documentation/' + className + '/summary.json');
 
             res.render('class_documentation', {
-                title: className + 'Documentation',
+                title: className + ' Documentation',
                 pageIsDocumentation: true,
                 module: json,
                 supportedClasses: documentedClasses.names

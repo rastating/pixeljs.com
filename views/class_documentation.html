@@ -28,6 +28,26 @@
                     {{/if}}
                 {{/each}}
             </ul>
+            
+            {{#if module.properties}}
+                <h4>Properties</h4>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each module.properties}}
+                            <tr>
+                                <td><a href="/documentation/{{../module.className}}/properties/{{this.name}}">{{this.name}}</a></td>
+                                <td>{{{parseMarkdown this.description}}}</td>
+                            </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            {{/if}}
 
             <h4>Methods</h4>
             <table class="table table-bordered table-striped">
@@ -40,20 +60,22 @@
                 <tbody>
                     {{#each module.methods}}
                         <tr>
-                            <td><a href="/documentation/{{module.className}}/{{this.name}}">{{this.name}}</a></td>
+                            <td><a href="/documentation/{{../module.className}}/methods/{{this.name}}">{{this.name}}</a></td>
                             <td>{{{parseMarkdown this.description}}}</td>
                         </tr>
                     {{/each}}
                 </tbody>
             </table>
 
-            <h4>Remarks</h4>
-            {{#each module.remarks}}
-                <p>
-                    {{{parseMarkdown this}}}
-                </p>
-            {{/each}}
-
+            {{#if module.remarks}}
+                <h4>Remarks</h4>
+                {{#each module.remarks}}
+                    <p>
+                        {{{parseMarkdown this}}}
+                    </p>
+                {{/each}}
+            {{/if}}
+            
             <h4>Supported Platforms</h4>
             <p>
                 {{module.platforms.names}}
