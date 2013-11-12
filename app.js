@@ -75,27 +75,40 @@ app.get('/documentation', function (req, res) {
 });
 
 app.get('/documentation/*', function (req, res) {
-    var regex = new RegExp(/^\/documentation\/([a-zA-Z0-9]+)(\/([a-zA-Z0-9_]+))?$/);
+    var regex = new RegExp(/^\/documentation\/([a-zA-Z0-9]+)(\/(properties|methods)(\/([a-zA-Z0-9_]+)))?$/);
     var matches = req.url.match(regex);
     var className = matches[1];
-    var methodName = matches[3];
+    var memberType = matches[3];
+    var memberName = matches[4];
 
     if (className === undefined || documentedClasses.names.indexOf(className) == -1) {
         res.render('404', { title: 'Uh oh...' });
     }
     else {
-        if (methodName === undefined) {
-            var json = require(__dirname + '/documentation/' + className + '/summary.json');
-
-            res.render('class_documentation', {
+        var classDocumentation = require(__dirname + '/documentation/' + className + '/summary.json');
+        if (memberType === undefined) {
+            res.render('module_documentation', {
                 title: className + ' Documentation',
                 pageIsDocumentation: true,
-                module: json,
-                supportedClasses: documentedClasses.names
+                module: classDocumentation,
+                supportedClasses: documentedClasses.names,
+                isClassDocumentation: true,
+                supportedProperties: classDocumentation.properties,
+                supportedMethods: classDocumentation.methods
             });
         }
         else {
+            var json = require(__dirname + '/documentation/' + className + '/' + memberName + '.json');
 
+            res.render('module_documentation', {
+                title: className + '.' + memberName + ' Documentation',
+                pageIsDocumentation: true,
+                module: json,
+                supportedClasses: documentedClasses.names,
+                isPropertyDocumentation: (memberType === 'properties'),
+                supportedProperties: classDocumentation.properties,
+                supportedMethods: classDocumentation.methods
+            });
         }
     }
 });
