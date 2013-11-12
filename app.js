@@ -79,7 +79,7 @@ app.get('/documentation/*', function (req, res) {
     var matches = req.url.match(regex);
     var className = matches[1];
     var memberType = matches[3];
-    var memberName = matches[4];
+    var memberName = matches[5];
 
     if (className === undefined || documentedClasses.names.indexOf(className) == -1) {
         res.render('404', { title: 'Uh oh...' });
