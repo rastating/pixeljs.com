@@ -30,7 +30,7 @@
         },
         {
             "name": "speed",
-            "description": "The speed at which to animate through frames in whole and fractional seconds."
+            "description": "The time in milliseconds that must pass before the next frame of an animation is loaded."
         }
     ],
 

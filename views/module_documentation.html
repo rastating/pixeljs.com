@@ -66,6 +66,26 @@
                 </ul>
             {{/if}}
             
+            {{#if module.parameters}}
+                <h4>Parameters</h4>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each module.parameters}}
+                            <tr>
+                                <td>{{this.name}}</td>
+                                <td>{{{parseMarkdown this.description}}}</td>
+                            </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            {{/if}}
+            
             {{#if module.properties}}
                 <h4>Properties</h4>
                 <table class="table table-bordered table-striped">
