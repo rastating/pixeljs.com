@@ -98,7 +98,11 @@
                     <tbody>
                         {{#each module.properties}}
                             <tr>
-                                <td><a href="/documentation/{{../module.className}}/properties/{{this.name}}">{{this.name}}</a></td>
+                                {{#if this.inheritedFrom}}
+                                    <td><a href="/documentation/{{this.inheritedFrom}}/properties/{{this.name}}">{{this.name}}</a></td>
+                                {{else}}  
+                                   <td><a href="/documentation/{{../../module.className}}/properties/{{this.name}}">{{this.name}}</a></td>
+                                {{/if}}
                                 <td>{{{parseMarkdown this.description}}}</td>
                             </tr>
                         {{/each}}
@@ -118,7 +122,12 @@
                     <tbody>
                         {{#each module.methods}}
                             <tr>
-                                <td><a href="/documentation/{{../module.className}}/methods/{{this.name}}">{{this.name}}</a></td>
+                                {{#if this.inheritedFrom}}
+                                    <td><a href="/documentation/{{this.inheritedFrom}}/methods/{{this.name}}">{{this.name}}</a></td>
+                                {{else}}
+                                    <td><a href="/documentation/{{../../module.className}}/methods/{{this.name}}">{{this.name}}</a></td>
+                                {{/if}}
+                                
                                 <td>{{{parseMarkdown this.description}}}</td>
                             </tr>
                         {{/each}}

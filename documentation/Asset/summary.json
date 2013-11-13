@@ -1,0 +1,44 @@
+{
+    "className": "Asset",
+
+    "summary": "Provides the base functionality and properties required to create an entity that can be used to provide a visual representation of an [Entity](/documentation/Entity).",
+
+    "inheritanceHierarchy": [
+        { "name": "Asset", "isEndPoint": true }
+    ],
+
+    "remarks": [
+        "The asset class should not be directly instantiated. Instead, a class should be derived from it to provide specific functionality to that type of asset."
+    ],
+    
+    "properties": [
+        {
+            "name": "loaded",
+            "description": "A boolean value indicating whether or not the asset has been loaded."
+        }
+    ],
+
+    "methods": [
+        {
+            "name": "draw",
+            "description": "Draws the asset to the [Layer](/documentation/Layer) that the owning [Entity](/documentation/Entity) exists on."
+        },
+        {
+            "name": "load",
+            "description": "Loads the asset."
+        },
+        {
+            "name": "onLoad",
+            "description": "The function to be called when the asset has finished loading."
+        },
+        {
+            "name": "prepare",
+            "description": "Prepare the information required to load the asset."
+        }
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": "In addition to these tested browsers, the Asset class is supported by any browser that supports the HTML5 canvas."
+    }
+}

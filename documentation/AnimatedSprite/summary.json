@@ -25,6 +25,15 @@
             "description": "A read only value that indicates whether or not the sprite is currently animating."
         },
         {
+            "name": "loaded",
+            "description": "A boolean value indicating whether or not the asset has been loaded. (Inherited from [Asset](/documentation/Asset).)",
+            "inheritedFrom": "Asset"
+        },
+        {
+            "name": "startAnimating",
+            "description": "Start animating the sprite until [stopAnimating](/documentation/AnimatedSprite/methods/stopAnimating) is called."
+        },
+        {
             "name": "row",
             "description": "The row number of frames to animate between."
         },
@@ -37,11 +46,16 @@
     "methods": [
         {
             "name": "draw",
-            "description": "Draws the asset to the [Layer](/documentation/Layer) that the owning [Entity](/documentation/Entity) exists on."
+            "description": "Draws the asset to the [Layer](/documentation/Layer) that the owning [Entity](/documentation/Entity) exists on. (Overrides [Asset.draw](/documentation/Asset/methods/draw).)"
         },
         {
             "name": "load",
-            "description": "Loads the asset."
+            "description": "Loads the asset. (Overrides [Asset.load](/documentation/Asset/methods/load).)"
+        },
+        {
+            "name": "prepare",
+            "description": "Prepare the information required to load the asset. (Inherited from [Asset](/documentation/Asset).)",
+            "inheritedFrom": "Asset"
         },
         {
             "name": "startAnimating",
