@@ -45,7 +45,7 @@
         },
         {
             "name": "startAnimating",
-            "description": "Start animating the sprite until [stopAnimating](/documentation/AnimatedSprite/stopAnimating) is called."
+            "description": "Start animating the sprite until [stopAnimating](/documentation/AnimatedSprite/methods/stopAnimating) is called."
         },
         {
             "name": "stopAnimating",
