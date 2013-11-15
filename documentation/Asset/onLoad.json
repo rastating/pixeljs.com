@@ -1,0 +1,15 @@
+{
+    "className": "Asset",
+    "methodName": "onLoad",
+
+    "summary": "The function to be called when the asset has finished loading.",
+    
+    "remarks": [
+        "No implementation is present for this method as default and must be assigned as required."
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "className": "Asset",
+    "methodName": "load",
+
+    "summary": "An abstract method with the purpose of loading the asset.",
+
+    "parameters": [
+        {
+            "name": "info",
+            "description": "A class specific object containing the information needed to load the asset."
+        },
+        {
+            "name": "callback",
+            "description": "**Optional:** the function to be called when the asset has finished loading."
+        }
+    ],
+    
+    "remarks": [
+        "No implementation is present for this method and must be implemented in classes which derive from Asset."
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

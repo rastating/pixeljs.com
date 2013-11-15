@@ -21,11 +21,11 @@
     "methods": [
         {
             "name": "draw",
-            "description": "Draws the asset to the [Layer](/documentation/Layer) that the owning [Entity](/documentation/Entity) exists on."
+            "description": "An abstract method with the purpose of drawing the asset to the [Layer](/documentation/Layer) that the owning [Entity](/documentation/Entity) exists on."
         },
         {
             "name": "load",
-            "description": "Loads the asset."
+            "description": "An abstract method with the purpose of loading the asset."
         },
         {
             "name": "onLoad",
