@@ -1,0 +1,84 @@
+{
+    "className": "Engine",
+
+    "summary": "Provides the functionality required to hook into various events, register components and control the game loop.",
+
+    "inheritanceHierarchy": [
+        { "name": "Engine", "isEndPoint": true }
+    ],
+
+    "remarks": [
+        "The Engine class is used as the main entry point for a Pixel.js game. An example of how to hook into this can be found in the [Getting Started](/getting-started) guide."
+    ],
+    
+    "properties": [
+        {
+            "name": "deltaTime",
+            "description": "The time in milliseconds that has passed since the last iteration of the game loop."
+        },
+        {
+            "name": "displayFPS",
+            "description": "A boolean value indicating whether or not the built-in FPS counter should be displayed."
+        },
+        {
+            "name": "fullscreen",
+            "description": "A boolean value indicating whether or not fullscreen mode should be enabled."
+        },
+        {
+            "name": "maxDeltaTime",
+            "description": "The maximum amount of time in milliseconds that should be applied when calculating the time between iterations of the game loop."
+        },
+        {
+            "name": "scene",
+            "description": "An object that encapsulates information relating to the game scene."
+        }
+    ],
+
+    "methods": [
+        {
+            "name": "addSound",
+            "description": "Add a [Sound](/documentation/Sound) to the collection of registered [Sound](/documentation/Sound) components."
+        },
+        {
+            "name": "createLayer",
+            "description": "Creates and registers a new [Layer](/documentation/Layer)."
+        },
+        {
+            "name": "createSound",
+            "description": "Creates and registers a new [Sound](/documentation/Sound)."
+        },
+        {
+            "name": "init",
+            "description": "Initialises the game scene."
+        },
+        {
+            "name": "loadAndRun",
+            "description": "Loads all registered components that have been prepared and then runs the game loop."
+        },
+        {
+            "name": "loadScene",
+            "description": "Loads the prepared components in the layers that are contained within the current scene."
+        },
+        {
+            "name": "loadSounds",
+            "description": "Loads the prepared sounds that are currently registered."
+        },
+        {
+            "name": "on",
+            "description": "Hooks a function to the specified event."
+        },
+        {
+            "name": "playSound",
+            "description": "Plays a registered sound."
+        },
+        {
+            "name": "run",
+            "description": "Starts running the game loop."
+        }
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": "In addition to these tested browsers, the Engine class is supported by any browser that supports the HTML5 canvas."
+    }
+}
