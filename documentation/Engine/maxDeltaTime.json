@@ -1,0 +1,15 @@
+{
+    "className": "Engine",
+    "propertyName": "maxDeltaTime",
+
+    "summary": "The maximum amount of time in milliseconds that should be applied when calculating the time between iterations of the game loop.",
+
+    "examples": [
+        "https://gist.github.com/rastating/3964050141ae2938649f.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

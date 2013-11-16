@@ -1,0 +1,22 @@
+{
+    "className": "Engine",
+    "methodName": "loadSounds",
+
+    "summary": "Loads the prepared sounds that are currently registered.",
+
+    "parameters": [
+        {
+            "name": "callback",
+            "description": "The function to invoke when the sounds have been loaded."
+        }
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/580c8932e01dbae402ff.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

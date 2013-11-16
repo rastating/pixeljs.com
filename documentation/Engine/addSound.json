@@ -1,0 +1,30 @@
+{
+    "className": "Engine",
+    "methodName": "addSound",
+
+    "summary": "Add a [Sound](/documentation/Sound) to the collection of registered [Sound](/documentation/Sound) components.",
+
+    "parameters": [
+        {
+            "name": "key",
+            "description": "The unique name to associate with the [Sound](/documentation/Sound)."
+        },
+        {
+            "name": "sound",
+            "description": "The [Sound](/documentation/Sound) to add to the collection."
+        }
+    ],
+    
+    "remarks": [
+        "Any [Sounds](/documentation/Sound) created using the [createSound](/documentation/Engine/methods/createSound) method do not have to be registered using this method, as they are automatically registered."
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/a8aac7b931fceb81a4bf.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": "The audio file formats supported varies between browsers. For a full list of formats and support visit [http://www.w3schools.com/html/html5_audio.asp](http://www.w3schools.com/html/html5_audio.asp)."
+    }
+}

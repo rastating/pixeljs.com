@@ -1,0 +1,22 @@
+{
+    "className": "Engine",
+    "methodName": "createLayer",
+
+    "summary": "Creates and registers a new [Layer](/documentation/Layer).",
+
+    "parameters": [
+        {
+            "name": "name",
+            "description": "The unique name to associate with the [Layer](/documentation/Layer)."
+        }
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/4db530c9a52e8c05d79f.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

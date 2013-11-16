@@ -1,0 +1,21 @@
+{
+    "className": "Engine",
+    "propertyName": "fullscreen",
+
+    "summary": "A boolean value indicating whether or not fullscreen mode should be enabled.",
+    
+    "remarks": [
+        "Currently Internet Explorer and Opera offer no fullscreen API and as a result are not supported in Pixel.js.",
+        
+        "An alternative for these browsers would be to offer a variety of resolution options for your game."
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/8365d96668621bcec818.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Safari.",
+        "notes": ""
+    }
+}

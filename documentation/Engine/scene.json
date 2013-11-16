@@ -1,0 +1,19 @@
+{
+    "className": "Engine",
+    "propertyName": "scene",
+
+    "summary": "An object that encapsulates information relating to the game scene.",
+
+    "remarks": [
+        "The scene property encapsulates three properties:\n*    **container:** the element that contains the canvases created by Pixel.js.\n*    **width:** the width of the game scene.\n*    **height:** the height of the game scene."
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/31d39ec4e7611e91bb55.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

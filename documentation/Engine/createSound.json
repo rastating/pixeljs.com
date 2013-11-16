@@ -1,0 +1,22 @@
+{
+    "className": "Engine",
+    "methodName": "createSound",
+
+    "summary": "Creates and registers a new [Sound](/documentation/Sound).",
+
+    "parameters": [
+        {
+            "name": "name",
+            "description": "The unique name to associate with the [Sound](/documentation/Sound)."
+        }
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/9d76aea0b09c5afca75f.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": "The audio file formats supported varies between browsers. For a full list of formats and support visit [http://www.w3schools.com/html/html5_audio.asp](http://www.w3schools.com/html/html5_audio.asp)."
+    }
+}
