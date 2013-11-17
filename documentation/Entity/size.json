@@ -1,0 +1,15 @@
+{
+    "className": "Entity",
+    "propertyName": "size",
+
+    "summary": "The size of the entity.",
+
+    "examples": [
+        "https://gist.github.com/rastating/c03dac737ec73d031dd2.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

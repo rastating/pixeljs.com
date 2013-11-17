@@ -1,0 +1,19 @@
+{
+    "className": "Entity",
+    "propertyName": "velocity",
+
+    "summary": "The velocity at which the entity moves.",
+    
+    "remarks": [
+        "The x property of the velocity object determines how fast the entity moves along the x-axis. Likewise, the y property determines how fast the entity moves along the y-axis."
+    ],
+
+    "examples": [
+        "https://gist.github.com/rastating/950193a121892c920e2e.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

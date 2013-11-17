@@ -1,0 +1,22 @@
+{
+    "className": "Entity",
+    "methodName": "collidesWith",
+
+    "summary": "Checks if the entity collides with another entity.",
+
+    "parameters": [
+        {
+            "name": "entity",
+            "description": "The [Entity](/documentation/Entity) to check for a collision against."
+        }
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/5ba41d1e4b79f127765c.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

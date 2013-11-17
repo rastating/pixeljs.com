@@ -1,0 +1,19 @@
+{
+    "className": "Entity",
+    "propertyName": "asset",
+
+    "summary": "The [Asset](/documentation/Asset) that is used to give a visual representation of the entity.",
+
+    "remarks": [
+        "An entity must have a valid asset in order to be drawn to the screen."
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/144026056a7c97f61e4a.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

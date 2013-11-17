@@ -1,0 +1,15 @@
+{
+    "className": "Entity",
+    "methodName": "moveUp",
+
+    "summary": "Moves the entity up based on the [velocity](/documentation/Entity/properties/velocity) of the entity and the [deltaTime](/documentation/Engine/properties/deltaTime) since the last update.",
+    
+    "examples": [
+        "https://gist.github.com/rastating/3bc7069b81009c4e7250.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

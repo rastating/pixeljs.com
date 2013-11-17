@@ -1,0 +1,15 @@
+{
+    "className": "Entity",
+    "methodName": "draw",
+
+    "summary": "Calls the draw method of the assigned [Asset](/documentation/Asset).",
+    
+    "remarks": [
+        "The draw method shouldn't need to be called manually as it is automatically called for all registered entities."
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

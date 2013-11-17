@@ -1,0 +1,26 @@
+{
+    "className": "Entity",
+    "methodName": "addToLayer",
+
+    "summary": "Adds the entity to the collection of registered entities on a [Layer](/documentation/Layer).",
+
+    "parameters": [
+        {
+            "name": "layer",
+            "description": "The [Layer](/documentation/Layer) to add the entity to."
+        }
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/272bf0e567c4092035d1.js"
+    ],
+    
+    "remarks": [
+        "Adding an entity to a layer using this method will also set the [layer](/documentation/Entity/properties/layer) property."
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "className": "Entity",
+    "methodName": "moveRight",
+
+    "summary": "Moves the entity right based on the [velocity](/documentation/Entity/properties/velocity) of the entity and the [deltaTime](/documentation/Engine/properties/deltaTime) since the last update.",
+    
+    "examples": [
+        "https://gist.github.com/rastating/d7f165d4c9a953c7a0cd.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}
