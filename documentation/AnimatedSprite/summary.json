@@ -26,7 +26,7 @@
         },
         {
             "name": "loaded",
-            "description": "A boolean value indicating whether or not the asset has been loaded. (Inherited from [Asset](/documentation/Asset).)",
+            "description": "A boolean value indicating whether or not the asset has been loaded.",
             "inheritedFrom": "Asset"
         },
         {
@@ -54,7 +54,7 @@
         },
         {
             "name": "prepare",
-            "description": "Prepare the information required to load the asset. (Inherited from [Asset](/documentation/Asset).)",
+            "description": "Prepare the information required to load the asset.",
             "inheritedFrom": "Asset"
         },
         {

@@ -14,7 +14,11 @@
                                     </li>
                                     {{#each ../../../supportedProperties}}
                                         <li>
-                                            <a href="/documentation/{{../../../../module.className}}/properties/{{this.name}}">{{this.name}}</a>
+                                            {{#if this.inheritedFrom}}
+                                                <a href="/documentation/{{this.inheritedFrom}}/properties/{{this.name}}">{{this.name}}</a>
+                                            {{else}}  
+                                                <a href="/documentation/{{../../../../../module.className}}/properties/{{this.name}}">{{this.name}}</a>
+                                            {{/if}}
                                         </li>
                                     {{/each}}
                                 </ul>
@@ -26,7 +30,11 @@
                                     </li>
                                     {{#each ../../../supportedMethods}}
                                         <li>
-                                            <a href="/documentation/{{../../../../module.className}}/methods/{{this.name}}">{{this.name}}</a>
+                                            {{#if this.inheritedFrom}}
+                                                <a href="/documentation/{{this.inheritedFrom}}/methods/{{this.name}}">{{this.name}}</a>
+                                            {{else}}  
+                                                <a href="/documentation/{{../../../../../module.className}}/methods/{{this.name}}">{{this.name}}</a>
+                                            {{/if}}
                                         </li>
                                     {{/each}}
                                 </ul>
@@ -103,7 +111,15 @@
                                 {{else}}  
                                    <td><a href="/documentation/{{../../module.className}}/properties/{{this.name}}">{{this.name}}</a></td>
                                 {{/if}}
-                                <td>{{{parseMarkdown this.description}}}</td>
+                                {{#if this.inheritedFrom}}
+                                    <td>{{{parseMarkdown this.description}}} (Inherited from <a href="/documentation/{{this.inheritedFrom}}">{{this.inheritedFrom}}</a>.)</td>
+                                {{else}}
+                                    {{#if this.overrides}}
+                                        <td>{{{parseMarkdown this.description}}} (Overrides <a href="/documentation/{{this.overrides.class}}/properties/{{this.name}}">{{this.overrides.class}}.{{this.name}}</a>.)</td>
+                                    {{else}}
+                                        <td>{{{parseMarkdown this.description}}}</td>
+                                    {{/if}}
+                                {{/if}}
                             </tr>
                         {{/each}}
                     </tbody>
@@ -128,7 +144,15 @@
                                     <td><a href="/documentation/{{../../module.className}}/methods/{{this.name}}">{{this.name}}</a></td>
                                 {{/if}}
                                 
-                                <td>{{{parseMarkdown this.description}}}</td>
+                                {{#if this.inheritedFrom}}
+                                    <td>{{{parseMarkdown this.description}}} (Inherited from <a href="/documentation/{{this.inheritedFrom}}">{{this.inheritedFrom}}</a>.)</td>
+                                {{else}}
+                                    {{#if this.overrides}}
+                                        <td>{{{parseMarkdown this.description}}} (Overrides <a href="/documentation/{{this.overrides.class}}/methods/{{this.name}}">{{this.overrides.class}}.{{this.name}}</a>.)</td>
+                                    {{else}}
+                                        <td>{{{parseMarkdown this.description}}}</td>
+                                    {{/if}}
+                                {{/if}}
                             </tr>
                         {{/each}}
                     </tbody>

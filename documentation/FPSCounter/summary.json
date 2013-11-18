@@ -1,0 +1,129 @@
+{
+    "className": "FPSCounter",
+
+    "summary": "Represents a drawable FPS counter.",
+
+    "inheritanceHierarchy": [
+        { "name": "Entity" },
+        { "name": "FPSCounter", "isEndPoint": true }
+    ],
+
+    "remarks": [
+        "An FPS counter can be automatically added to a game by setting the displayFPS property of the engine class to true."
+    ],
+    
+    "properties": [
+        {
+            "name": "asset",
+            "description": "The [Asset](/documentation/Asset) that is used to give a visual representation of the entity.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "canMoveDown",
+            "description": "A boolean value indicating whether the entity can be moved downards.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "canMoveLeft",
+            "description": "A boolean value indicating whether the entity can be moved to the left.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "canMoveRight",
+            "description": "A boolean value indicating whether the entity can be moved to the right.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "canMoveUp",
+            "description": "A boolean value indicating whether the entity can be moved upwards.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "fps",
+            "description": "The current FPS reading."
+        },
+        {
+            "name": "isCollidable",
+            "description": "A boolean value indicating whether the entity can collide with other collidable entities.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "layer",
+            "description": "The [Layer](/documentation/Layer) that the entity is registered to.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "pos",
+            "description": "The position of the entity on screen relative to the top-left corner of the scene.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "size",
+            "description": "The size of the entity.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "velocity",
+            "description": "The velocity at which the entity moves.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "visible",
+            "description": "A boolean value indicating whether the entity is visible.",
+            "inheritedFrom": "Entity"
+        }
+    ],
+
+    "methods": [
+        {
+            "name": "addToLayer",
+            "description": "Adds the entity to the collection of registered entities on a [Layer](/documentation/Layer).",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "collidesWith",
+            "description": "Checks if the entity collides with another entity.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "draw",
+            "description": "Draws the current FPS reading to the game scene.",
+            "overrides": { "class": "Entity" }
+        },
+        {
+            "name": "moveDown",
+            "description": "Moves the entity down based on the [velocity](/documentation/Entity/properties/velocity) of the entity and the [deltaTime](/documentation/Engine/properties/deltaTime) since the last update.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "moveLeft",
+            "description": "Moves the entity left based on the [velocity](/documentation/Entity/properties/velocity) of the entity and the [deltaTime](/documentation/Engine/properties/deltaTime) since the last update.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "moveRight",
+            "description": "Moves the entity right based on the [velocity](/documentation/Entity/properties/velocity) of the entity and the [deltaTime](/documentation/Engine/properties/deltaTime) since the last update.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "moveUp",
+            "description": "Moves the entity up based on the [velocity](/documentation/Entity/properties/velocity) of the entity and the [deltaTime](/documentation/Engine/properties/deltaTime) since the last update.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "onCollide",
+            "description": "The function to be called when the entity has collided with another entity.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "update",
+            "description": "Recalculates the number of frames per second.",
+            "overrides": { "class": "Entity" }
+        }
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}
