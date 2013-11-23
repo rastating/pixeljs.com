@@ -1,0 +1,19 @@
+{
+    "className": "Layer",
+    "propertyName": "engine",
+
+    "summary": "The [Engine](/documentation/Engine) that the layer belongs to.",
+
+    "remarks": [
+        "A layer must have a valid engine assigned to it in order to be able to provide its standard functionality."
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/7ff2ee36e3429097cdec.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

@@ -21,6 +21,10 @@
             "description": "A boolean value indicating whether or not the layer should be redrawn when the next frame is rendered."
         },
         {
+            "name": "static",
+            "description": "A boolean value indicating whether or not the layer is static and should only be drawn once."
+        },
+        {
             "name": "visible",
             "description": "A boolean value indicating whether or not the layer is visible."
         },
