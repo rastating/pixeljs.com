@@ -1,0 +1,15 @@
+{
+    "className": "Layer",
+    "methodName": "createEntity",
+
+    "summary": "Create and register a new [Entity](/documentation/Entity).",
+
+    "examples": [
+        "https://gist.github.com/rastating/b8b03f10f8cf69bb9725.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

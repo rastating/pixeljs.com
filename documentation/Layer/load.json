@@ -1,0 +1,22 @@
+{
+    "className": "Layer",
+    "methodName": "load",
+
+    "summary": "Load all the components registered to the layer.",
+
+    "parameters": [
+        {
+            "name": "callback",
+            "description": "**Optional:** the function to be called when the layer has finished loading."
+        }
+    ],
+
+    "examples": [
+        "https://gist.github.com/rastating/4bc746c0265750c340d8.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}
