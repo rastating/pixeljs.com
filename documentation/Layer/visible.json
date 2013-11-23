@@ -1,0 +1,15 @@
+{
+    "className": "Layer",
+    "propertyName": "visible",
+
+    "summary": "A boolean value indicating whether or not the layer is visible.",
+
+    "examples": [
+        "https://gist.github.com/rastating/23dd7b600d9b853ac671.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}
