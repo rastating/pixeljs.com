@@ -1,0 +1,11 @@
+{
+    "className": "Tile",
+    "propertyName": "size",
+
+    "summary": "An object containing two properties, ```width``` and ```height```, which represent the size of the area that the tile should cover.",
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

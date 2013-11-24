@@ -1,0 +1,26 @@
+{
+    "className": "SpriteSheet",
+    "methodName": "load",
+
+    "summary": "Loads the asset.",
+
+    "parameters": [
+        {
+            "name": "info",
+            "description": "An object containing the following properties:\n*    **name:** the name of the sprite sheet to load.\n*    **rows:** the number of rows in the sheet.\n*    **frames:** the number of frames in each row\n*    **transparencyKey:** an object containing an R, G and B value which represent the respective RGB value that should be transparent."
+        },
+        {
+            "name": "callback",
+            "description": "**Optional:** the function to be called when the asset has finished loading."
+        }
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/ec3fa1445c206b615923.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

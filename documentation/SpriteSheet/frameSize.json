@@ -1,0 +1,11 @@
+{
+    "className": "SpriteSheet",
+    "propertyName": "frameSize",
+
+    "summary": "An object containing two properties, ```width``` and ```height```, which represent the size of an individual frame in the sprite sheet.",
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

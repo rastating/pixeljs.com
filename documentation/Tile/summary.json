@@ -1,0 +1,50 @@
+{
+    "className": "Tile",
+
+    "summary": "Represents a repeatable tile that can be used to cover the area of an [Entity](/documentation/Entity).",
+
+    "inheritanceHierarchy": [
+        { "name": "Asset" },
+        { "name": "Entity", "isEndPoint": true }
+    ],
+    
+    "properties": [
+        {
+            "name": "loaded",
+            "description": "A boolean value indicating whether or not the asset has been loaded.",
+            "inheritedFrom": "Asset"
+        },
+        {
+            "name": "size",
+            "description": "An object containing two properties, ```width``` and ```height```, which represent the size of the area that the tile should cover."
+        }
+    ],
+
+    "methods": [
+        {
+            "name": "draw",
+            "description": "Draws the asset to the [Layer](/documentation/Layer) that the owning [Entity](/documentation/Entity) exists on.",
+            "overrides": { "class": "Asset" }
+        },
+        {
+            "name": "load",
+            "description": "Loads the asset.",
+            "overrides": { "class": "Asset" }
+        },
+        {
+            "name": "onLoad",
+            "description": "The function to be called when the asset has finished loading.",
+            "inheritedFrom": "Asset"
+        },
+        {
+            "name": "prepare",
+            "description": "Prepare the information required to load the asset.",
+            "inheritedFrom": "Asset"
+        }
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

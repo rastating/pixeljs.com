@@ -1,0 +1,11 @@
+{
+    "className": "SpriteSheet",
+    "propertyName": "rowCount",
+
+    "summary": "The number of rows in the sheet.",
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

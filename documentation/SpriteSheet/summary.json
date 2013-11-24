@@ -1,0 +1,58 @@
+{
+    "className": "SpriteSheet",
+
+    "summary": "Represents a sprite sheet that can be used to access individual frames of a sheet.",
+
+    "inheritanceHierarchy": [
+        { "name": "Asset" },
+        { "name": "SpriteSheet", "isEndPoint": true }
+    ],
+    
+    "properties": [
+        {
+            "name": "frameCount",
+            "description": "The number of frames in each row."
+        },
+        {
+            "name": "frameSize",
+            "description": "An object containing two properties, ```width``` and ```height```, which represent the size of an individual frame in the sprite sheet."
+        },
+        {
+            "name": "loaded",
+            "description": "A boolean value indicating whether or not the asset has been loaded.",
+            "inheritedFrom": "Asset"
+        },
+        {
+            "name": "rowCount",
+            "description": "The number of rows in the sheet."
+        }
+    ],
+
+    "methods": [
+        {
+            "name": "draw",
+            "description": "An abstract method with the purpose of drawing the asset to the [Layer](/documentation/Layer) that the owning [Entity](/documentation/Entity) exists on.",
+            "inheritedFrom": "Asset"
+        },
+        {
+            "name": "load",
+            "description": "Loads the asset.",
+            "overrides": { "class": "Asset" }
+        },
+        {
+            "name": "onLoad",
+            "description": "The function to be called when the asset has finished loading.",
+            "inheritedFrom": "Asset"
+        },
+        {
+            "name": "prepare",
+            "description": "Prepare the information required to load the asset.",
+            "inheritedFrom": "Asset"
+        }
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

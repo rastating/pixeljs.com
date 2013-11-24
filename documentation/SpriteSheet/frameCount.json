@@ -1,0 +1,11 @@
+{
+    "className": "SpriteSheet",
+    "propertyName": "frameCount",
+
+    "summary": "The number of frames in each row.",
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}
