@@ -1,0 +1,41 @@
+{
+    "className": "PixelJS",
+
+    "summary": "Provides shared / static properties and methods used throughout the entire engine.",
+
+    "inheritanceHierarchy": [
+        { "name": "PixelJS", "isEndPoint": true }
+    ],
+
+    "remarks": [
+        "PixelJS is not instantiable and should be treated as a namespace.",
+        "All the classes within Pixel.js are contained within this namespace."
+    ],
+    
+    "properties": [
+        {
+            "name": "assetPath",
+            "description": "The path that contains the asset directories"
+        },
+        {
+            "name": "Directions",
+            "description": "A set of properties to identify the direction an entity is moving in."
+        },
+        {
+            "name": "Keys",
+            "description": "A set of properties to identify keys that have been pressed or released."
+        }
+    ],
+
+    "methods": [
+        {
+            "name": "extend",
+            "description": "Copies the prototype of one class to another."
+        }
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

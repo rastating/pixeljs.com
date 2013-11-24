@@ -1,0 +1,15 @@
+{
+    "className": "PixelJS",
+    "propertyName": "Directions",
+
+    "summary": "A set of properties to identify the direction an entity is moving in.",
+    
+    "examples": [
+        "https://gist.github.com/rastating/4409c872647cebf49ce2.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

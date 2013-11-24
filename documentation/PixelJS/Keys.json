@@ -1,0 +1,15 @@
+{
+    "className": "PixelJS",
+    "propertyName": "Keys",
+
+    "summary": "A set of properties to identify keys that have been pressed or released.",
+    
+    "examples": [
+        "https://gist.github.com/rastating/71552c2e3dca635cf0d7.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

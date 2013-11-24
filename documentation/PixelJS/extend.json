@@ -1,0 +1,26 @@
+{
+    "className": "PixelJS",
+    "methodName": "extend",
+
+    "summary": "Copies the prototype of one class to another.",
+
+    "parameters": [
+        {
+            "name": "childClass",
+            "description": "The class to copy the prototype to."
+        },
+        {
+            "name": "parentClass",
+            "description": "The class to copy the prototype from."
+        }
+    ],
+
+    "examples": [
+        "https://gist.github.com/rastating/a1bc001046ac0cd82007.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}
