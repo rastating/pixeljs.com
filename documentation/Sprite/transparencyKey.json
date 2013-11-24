@@ -1,0 +1,11 @@
+{
+    "className": "Sprite",
+    "propertyName": "transparencyKey",
+
+    "summary": "An object containing an R, G and B value which represent the respective RGB value that should be transparent.",
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

@@ -12,7 +12,7 @@
     ],
     
     "remarks": [
-        "The info parameter must use the same schema as that of the class that is inheriting from the Asset class."
+        "The info parameter must use the same schema as that of the class that is inheriting from the Asset class in its load method."
     ],
     
     "examples": [

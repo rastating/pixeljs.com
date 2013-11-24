@@ -1,0 +1,50 @@
+{
+    "className": "Sprite",
+
+    "summary": "Represents a sprite that can be used as an [Asset](/documentation/Asset) for an [Entity](/documentation/Entity).",
+
+    "inheritanceHierarchy": [
+        { "name": "Asset" },
+        { "name": "Sprite", "isEndPoint": true }
+    ],
+    
+    "properties": [
+        {
+            "name": "loaded",
+            "description": "A boolean value indicating whether or not the asset has been loaded.",
+            "inheritedFrom": "Asset"
+        },
+        {
+            "name": "transparencyKey",
+            "description": "An object containing an R, G and B value which represent the respective RGB value that should be transparent."
+        }
+    ],
+
+    "methods": [
+        {
+            "name": "draw",
+            "description": "Draws the asset to the [Layer](/documentation/Layer) that the owning [Entity](/documentation/Entity) exists on.",
+            "overrides": { "class": "Asset" }
+        },
+        {
+            "name": "load",
+            "description": "Loads the asset.",
+            "overrides": { "class": "Asset" }
+        },
+        {
+            "name": "onLoad",
+            "description": "The function to be called when the asset has finished loading.",
+            "inheritedFrom": "Asset"
+        },
+        {
+            "name": "prepare",
+            "description": "Prepare the information required to load the asset.",
+            "inheritedFrom": "Asset"
+        }
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}
