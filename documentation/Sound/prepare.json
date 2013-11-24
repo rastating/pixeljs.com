@@ -1,0 +1,22 @@
+{
+    "className": "Sound",
+    "methodName": "prepare",
+
+    "summary": "Prepare the information required to load the sound.",
+
+    "parameters": [
+        {
+            "name": "info",
+            "description": "An object containing the following properties:\n*    **name:** the name of the [Sound](/documentation/Sound)."
+        }
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/47cbdf9e7f8d312e715c.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

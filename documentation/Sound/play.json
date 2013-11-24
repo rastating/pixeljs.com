@@ -1,0 +1,15 @@
+{
+    "className": "Sound",
+    "methodName": "play",
+
+    "summary": "Play the sound.",
+    
+    "examples": [
+        "https://gist.github.com/rastating/9848aba2ed02f624abaa.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

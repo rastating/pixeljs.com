@@ -1,0 +1,15 @@
+{
+    "className": "Player",
+    "propertyName": "direction",
+
+    "summary": "The [Direction](/documentation/PixelJS/properties/Directions) the player is facing.",
+    
+    "examples": [
+        "https://gist.github.com/rastating/3a0812d41b389ab7a771.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

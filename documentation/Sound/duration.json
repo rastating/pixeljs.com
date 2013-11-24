@@ -1,0 +1,15 @@
+{
+    "className": "Sound",
+    "propertyName": "duration",
+
+    "summary": "The length of the media in seconds, or zero if no media data is available.  If the media data is available but the length is unknown, this value is NaN.  If the media is streamed and has no predefined length, the value is Inf.",
+    
+    "examples": [
+        "https://gist.github.com/rastating/7027c6e1acac3997561a.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

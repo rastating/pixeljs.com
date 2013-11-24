@@ -1,0 +1,26 @@
+{
+    "className": "Sound",
+    "methodName": "load",
+
+    "summary": "Loads the sound.",
+
+    "parameters": [
+        {
+            "name": "info",
+            "description": "An object containing the following properties:\n*    **name:** the name of the [Sound](/documentation/Sound)."
+        },
+        {
+            "name": "callback",
+            "description": "**Optional:** the function to be called when the sound has finished loading."
+        }
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/8322aafb4e77d217b34c.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

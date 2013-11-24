@@ -1,0 +1,137 @@
+{
+    "className": "Player",
+
+    "summary": "Represents a player that can be controlled using the directional keys on a keyboard.",
+
+    "inheritanceHierarchy": [
+        { "name": "Entity" },
+        { "name": "Player", "isEndPoint": true }
+    ],
+
+    "remarks": [
+        "When using this class with an [AnimatedSprite](/documentation/AnimatedSprite), the sprite sheet should contain the character frames for each direction in the same format as the sprite sheet below:\n\n![Sprite sheet format for Players](/static/examples/coin_collector/sprite_sheets/char.png)"
+    ],
+    
+    "properties": [
+        {
+            "name": "allowDiagonalMovement",
+            "description": "A boolean value indicating whether to allow diagonal movement."
+        },
+        {
+            "name": "asset",
+            "description": "The [Asset](/documentation/Asset) that is used to give a visual representation of the entity.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "canMoveDown",
+            "description": "A boolean value indicating whether the entity can be moved downards.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "canMoveLeft",
+            "description": "A boolean value indicating whether the entity can be moved to the left.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "canMoveRight",
+            "description": "A boolean value indicating whether the entity can be moved to the right.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "canMoveUp",
+            "description": "A boolean value indicating whether the entity can be moved upwards.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "direction",
+            "description": "The [Direction](/documentation/PixelJS/properties/Directions) the player is facing."
+        },
+        {
+            "name": "isAnimatedSprite",
+            "description": "A boolean value indicating whether the asset assigned to the player is an [AnimatedSprite](/documentation/AnimatedSprite)."
+        },
+        {
+            "name": "isCollidable",
+            "description": "A boolean value indicating whether the entity can collide with other collidable entities.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "layer",
+            "description": "The [Layer](/documentation/Layer) that the entity is registered to.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "pos",
+            "description": "The position of the entity on screen relative to the top-left corner of the scene.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "size",
+            "description": "The size of the entity.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "velocity",
+            "description": "The velocity at which the entity moves.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "visible",
+            "description": "A boolean value indicating whether the entity is visible.",
+            "inheritedFrom": "Entity"
+        }
+    ],
+
+    "methods": [
+        {
+            "name": "addToLayer",
+            "description": "Adds the entity to the collection of registered entities on a [Layer](/documentation/Layer).",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "collidesWith",
+            "description": "Checks if the entity collides with another entity.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "draw",
+            "description": "Calls the draw method of the assigned [Asset](/documentation/Asset).",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "moveDown",
+            "description": "Moves the entity down based on the [velocity](/documentation/Entity/properties/velocity) of the entity and the [deltaTime](/documentation/Engine/properties/deltaTime) since the last update.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "moveLeft",
+            "description": "Moves the entity left based on the [velocity](/documentation/Entity/properties/velocity) of the entity and the [deltaTime](/documentation/Engine/properties/deltaTime) since the last update.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "moveRight",
+            "description": "Moves the entity right based on the [velocity](/documentation/Entity/properties/velocity) of the entity and the [deltaTime](/documentation/Engine/properties/deltaTime) since the last update.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "moveUp",
+            "description": "Moves the entity up based on the [velocity](/documentation/Entity/properties/velocity) of the entity and the [deltaTime](/documentation/Engine/properties/deltaTime) since the last update.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "onCollide",
+            "description": "The function to be called when the entity has collided with another entity.",
+            "inheritedFrom": "Entity"
+        },
+        {
+            "name": "update",
+            "description": "An abstract method with the purpose of updating the entity's state.",
+            "inheritedFrom": "Entity"
+        }
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}
