@@ -11,6 +11,7 @@ marked.setOptions({
 app.set('view engine', 'html');
 app.engine('html', require('hbs').__express);
 
+app.use(app.router);
 app.use('/static', express.static('static'));
 
 var parseMarkdown = function (markdown) {
@@ -71,46 +72,55 @@ app.get('/changelog', function (req, res) {
 });
 
 app.get('/documentation', function (req, res) {
-    res.render('documentation', { title: 'Documentation', pageIsDocumentation: true });
+    res.redirect(301, '/documentation/AnimatedSprite');
 });
 
 app.get('/documentation/*', function (req, res) {
-    var regex = new RegExp(/^\/documentation\/([a-zA-Z0-9]+)(\/(properties|methods)(\/([a-zA-Z0-9_]+)))?$/);
-    var matches = req.url.match(regex);
-    var className = matches[1];
-    var memberType = matches[3];
-    var memberName = matches[5];
+    try {
+        var regex = new RegExp(/^\/documentation\/([a-zA-Z0-9]+)(\/(properties|methods)(\/([a-zA-Z0-9_]+)))?$/);
+        var matches = req.url.match(regex);
+        var className = matches[1];
+        var memberType = matches[3];
+        var memberName = matches[5];
 
-    if (className === undefined || documentedClasses.names.indexOf(className) == -1) {
-        res.render('404', { title: 'Uh oh...' });
-    }
-    else {
-        var classDocumentation = require(__dirname + '/documentation/' + className + '/summary.json');
-        if (memberType === undefined) {
-            res.render('module_documentation', {
-                title: className + ' Documentation',
-                pageIsDocumentation: true,
-                module: classDocumentation,
-                supportedClasses: documentedClasses.names,
-                isClassDocumentation: true,
-                supportedProperties: classDocumentation.properties,
-                supportedMethods: classDocumentation.methods
-            });
+        if (className === undefined || documentedClasses.names.indexOf(className) == -1) {
+            res.render('404', { title: 'Uh oh...' });
         }
         else {
-            var json = require(__dirname + '/documentation/' + className + '/' + memberName + '.json');
+            var classDocumentation = require(__dirname + '/documentation/' + className + '/summary.json');
+            if (memberType === undefined) {
+                res.render('module_documentation', {
+                    title: className + ' Documentation',
+                    pageIsDocumentation: true,
+                    module: classDocumentation,
+                    supportedClasses: documentedClasses.names,
+                    isClassDocumentation: true,
+                    supportedProperties: classDocumentation.properties,
+                    supportedMethods: classDocumentation.methods
+                });
+            }
+            else {
+                var json = require(__dirname + '/documentation/' + className + '/' + memberName + '.json');
 
-            res.render('module_documentation', {
-                title: className + '.' + memberName + ' Documentation',
-                pageIsDocumentation: true,
-                module: json,
-                supportedClasses: documentedClasses.names,
-                isPropertyDocumentation: (memberType === 'properties'),
-                supportedProperties: classDocumentation.properties,
-                supportedMethods: classDocumentation.methods
-            });
+                res.render('module_documentation', {
+                    title: className + '.' + memberName + ' Documentation',
+                    pageIsDocumentation: true,
+                    module: json,
+                    supportedClasses: documentedClasses.names,
+                    isPropertyDocumentation: (memberType === 'properties'),
+                    supportedProperties: classDocumentation.properties,
+                    supportedMethods: classDocumentation.methods
+                });
+            }
         }
     }
+    catch (err) {
+        res.render('404', { title: 'Uh oh...' });
+    }
+});
+
+app.use(function(req, res) {
+    res.render('404', { title: 'Uh oh...' });
 });
 
 app.listen(3000);
