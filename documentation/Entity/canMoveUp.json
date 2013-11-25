@@ -1,0 +1,15 @@
+{
+    "className": "Entity",
+    "propertyName": "canMoveUp",
+
+    "summary": "A boolean value indicating whether the entity can be moved upwards.",
+    
+    "examples": [
+        "https://gist.github.com/rastating/8a160827495a751a66bd.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

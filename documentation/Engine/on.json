@@ -1,0 +1,31 @@
+{
+    "className": "Engine",
+    "methodName": "on",
+
+    "summary": "Hooks a function to the specified event.",
+
+    "parameters": [
+        {
+            "name": "event",
+            "description": "The name of the event to bind the callback to."
+        },
+        {
+            "name": "callback",
+            "description": "The function to invoke when the event occurs."
+        }
+    ],
+    
+    "remarks": [
+        "The events currently supported by the on method are:\n*    **keyDown(keyCode):** occurs when the user presses a key down.\n*    **keyUp(keyCode):** occurs when the user releases a key press.",
+        "Multiple event handlers can be assigned to a single event if desired."
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/54a1757fd6f142132a3f.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

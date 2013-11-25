@@ -1,0 +1,11 @@
+{
+    "className": "Player",
+    "propertyName": "isAnimatedSprite",
+
+    "summary": "A boolean value indicating whether the asset assigned to the player is an [AnimatedSprite](/documentation/AnimatedSprite).",
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

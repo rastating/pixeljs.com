@@ -1,0 +1,19 @@
+{
+    "className": "AnimatedSprite",
+    "propertyName": "defaultFrame",
+
+    "summary": "The index of the frame to display when the sprite is not animating.",
+
+    "remarks": [
+        "If no value is explicitly defined as the default frame, it will be defaulted to 0."
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/8b130131c532f734d195.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

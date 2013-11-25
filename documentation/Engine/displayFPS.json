@@ -1,0 +1,15 @@
+{
+    "className": "Engine",
+    "propertyName": "displayFPS",
+
+    "summary": "A boolean value indicating whether or not the built-in FPS counter should be displayed.",
+
+    "examples": [
+        "https://gist.github.com/rastating/a61cb46a5c6b15bd8fd3.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

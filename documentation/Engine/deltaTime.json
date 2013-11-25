@@ -1,0 +1,15 @@
+{
+    "className": "Engine",
+    "propertyName": "deltaTime",
+
+    "summary": "The time in milliseconds that has passed since the last iteration of the game loop.",
+    
+    "examples": [
+        "https://gist.github.com/rastating/ee4f85e5489868dc689f.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

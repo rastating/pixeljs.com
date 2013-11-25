@@ -1,0 +1,22 @@
+{
+    "className": "Engine",
+    "methodName": "playSound",
+
+    "summary": "Plays a registered sound.",
+
+    "parameters": [
+        {
+            "name": "key",
+            "description": "The key / name of the sound to play."
+        }
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/a97e0a43958955056baa.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": "The audio file formats supported varies between browsers. For a full list of formats and support visit [http://www.w3schools.com/html/html5_audio.asp](http://www.w3schools.com/html/html5_audio.asp)."
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "className": "Sound",
+    "propertyName": "playbackRate",
+
+    "summary": "The current rate at which the media is being played back. This is used to implement user controls for fast forward, slow motion, and so forth. The normal playback rate is multiplied by this value to obtain the current rate, so a value of 1.0 indicates normal speed.\n\nIf the playbackRate is negative, the media is played backwards.\n\nThe audio is muted when the media plays backwards or if the fast forward or slow motion is outside a useful range (E.g. Gecko mute the sound outside the range 0.25 and 5.0).\n\nThe pitch of the audio is corrected by default and is the same for every speed. Some navigators implement the non-standard preservespitch property to control this.",
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

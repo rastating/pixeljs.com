@@ -1,0 +1,19 @@
+{
+    "className": "Layer",
+    "propertyName": "redraw",
+
+    "summary": "A boolean value indicating whether or not the layer should be redrawn when the next frame is rendered.",
+
+    "remarks": [
+        "If a layer is set as static this flag will be reset to false each time the layer is redrawn. If a layer is not a static layer, this flag will always remain true."
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/068cf07010e22d35d769.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

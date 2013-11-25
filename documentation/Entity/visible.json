@@ -1,0 +1,15 @@
+{
+    "className": "Entity",
+    "propertyName": "visible",
+
+    "summary": "A boolean value indicating whether the entity is visible.",
+
+    "examples": [
+        "https://gist.github.com/rastating/42d81dd27034d1f8094e.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

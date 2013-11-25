@@ -1,0 +1,26 @@
+{
+    "className": "Layer",
+    "methodName": "update",
+
+    "summary": "Call the update method for all the registered components.",
+
+    "parameters": [
+        {
+            "name": "elapsedTime",
+            "description": "The time in milliseconds that has passed since the game started."
+        },
+        {
+            "name": "dt",
+            "description": "The time in fractional seconds since the last iteration of the game loop."
+        }
+    ],
+    
+    "remarks": [
+        "The update method shouldn't need to be called manually as it is automatically called for all registered layers."
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

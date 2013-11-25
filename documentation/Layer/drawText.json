@@ -1,0 +1,42 @@
+{
+    "className": "Layer",
+    "methodName": "drawText",
+
+    "summary": "Draw text on the layer.",
+
+    "examples": [
+        "https://gist.github.com/rastating/464476637b0b48086c78.js"
+    ],
+
+    "parameters": [
+        {
+            "name": "text",
+            "description": "The text to draw to the layer."
+        },
+        {
+            "name": "x",
+            "description": "The x coordinate where to place the text on the layer."
+        },
+        {
+            "name": "y",
+            "description": "The y coordinate where to place the text on the layer."
+        },
+        {
+            "name": "font",
+            "description": "The font name to use when drawing the text."
+        },
+        {
+            "name": "fillStyle",
+            "description": "The fill style of the text, e.g. a hex colour code."
+        },
+        {
+            "name": "textAlign",
+            "description": "A string indicating the alignment to use (left, center or right)."
+        }
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

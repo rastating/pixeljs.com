@@ -1,0 +1,11 @@
+{
+    "className": "Sound",
+    "methodName": "pause",
+
+    "summary": "Pause the sound, if it is playing.",
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

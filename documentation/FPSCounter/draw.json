@@ -1,0 +1,15 @@
+{
+    "className": "FPSCounter",
+    "methodName": "draw",
+
+    "summary": "Draws the current FPS reading to the game scene.",
+    
+    "remarks": [
+        "The draw method shouldn't need to be called manually as it is automatically called for all registered entities."
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

@@ -1,0 +1,104 @@
+{
+    "className": "Entity",
+
+    "summary": "Represents a generic game entity that can be drawn to the game scene.",
+
+    "inheritanceHierarchy": [
+        { "name": "Entity", "isEndPoint": true }
+    ],
+
+    "remarks": [
+        "In order to make the most of the Pixel.js engine, all drawable game components should be subclasses of the Entity class. See the [Player Class](https://github.com/rastating/pixel.js/blob/master/modules/player.js) for a practical example of this."
+    ],
+    
+    "properties": [
+        {
+            "name": "asset",
+            "description": "The [Asset](/documentation/Asset) that is used to give a visual representation of the entity."
+        },
+        {
+            "name": "canMoveDown",
+            "description": "A boolean value indicating whether the entity can be moved downards."
+        },
+        {
+            "name": "canMoveLeft",
+            "description": "A boolean value indicating whether the entity can be moved to the left."
+        },
+        {
+            "name": "canMoveRight",
+            "description": "A boolean value indicating whether the entity can be moved to the right."
+        },
+        {
+            "name": "canMoveUp",
+            "description": "A boolean value indicating whether the entity can be moved upwards."
+        },
+        {
+            "name": "isCollidable",
+            "description": "A boolean value indicating whether the entity can collide with other collidable entities."
+        },
+        {
+            "name": "layer",
+            "description": "The [Layer](/documentation/Layer) that the entity is registered to."
+        },
+        {
+            "name": "pos",
+            "description": "The position of the entity on screen relative to the top-left corner of the scene."
+        },
+        {
+            "name": "size",
+            "description": "The size of the entity."
+        },
+        {
+            "name": "velocity",
+            "description": "The velocity at which the entity moves."
+        },
+        {
+            "name": "visible",
+            "description": "A boolean value indicating whether the entity is visible."
+        }
+    ],
+
+    "methods": [
+        {
+            "name": "addToLayer",
+            "description": "Adds the entity to the collection of registered entities on a [Layer](/documentation/Layer)."
+        },
+        {
+            "name": "collidesWith",
+            "description": "Checks if the entity collides with another entity."
+        },
+        {
+            "name": "draw",
+            "description": "Calls the draw method of the assigned [Asset](/documentation/Asset)."
+        },
+        {
+            "name": "moveDown",
+            "description": "Moves the entity down based on the [velocity](/documentation/Entity/properties/velocity) of the entity and the [deltaTime](/documentation/Engine/properties/deltaTime) since the last update."
+        },
+        {
+            "name": "moveLeft",
+            "description": "Moves the entity left based on the [velocity](/documentation/Entity/properties/velocity) of the entity and the [deltaTime](/documentation/Engine/properties/deltaTime) since the last update."
+        },
+        {
+            "name": "moveRight",
+            "description": "Moves the entity right based on the [velocity](/documentation/Entity/properties/velocity) of the entity and the [deltaTime](/documentation/Engine/properties/deltaTime) since the last update."
+        },
+        {
+            "name": "moveUp",
+            "description": "Moves the entity up based on the [velocity](/documentation/Entity/properties/velocity) of the entity and the [deltaTime](/documentation/Engine/properties/deltaTime) since the last update."
+        },
+        {
+            "name": "onCollide",
+            "description": "The function to be called when the entity has collided with another entity."
+        },
+        {
+            "name": "update",
+            "description": "An abstract method with the purpose of updating the entity's state."
+        }
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

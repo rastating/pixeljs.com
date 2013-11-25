@@ -1,0 +1,15 @@
+{
+    "className": "Entity",
+    "methodName": "moveDown",
+
+    "summary": "Moves the entity down based on the [velocity](/documentation/Entity/properties/velocity) of the entity and the [deltaTime](/documentation/Engine/properties/deltaTime) since the last update.",
+    
+    "examples": [
+        "https://gist.github.com/rastating/a1b9e6461527b1d4c823.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

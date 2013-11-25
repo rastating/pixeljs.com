@@ -1,0 +1,15 @@
+{
+    "className": "AnimatedSprite",
+    "methodName": "startAnimating",
+
+    "summary": "Start animating the sprite until [stopAnimating](/documentation/AnimatedSprite/methods/stopAnimating) is called.",
+    
+    "examples": [
+        "https://gist.github.com/rastating/bcfbcaf766090db25984.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

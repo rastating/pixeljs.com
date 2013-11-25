@@ -1,0 +1,19 @@
+{
+    "className": "Asset",
+    "propertyName": "loaded",
+
+    "summary": "A boolean value indicating whether or not the asset has been loaded.",
+    
+    "examples": [
+        "https://gist.github.com/rastating/3cb97dc1b129547764fa.js"
+    ],
+    
+    "remarks": [
+        "Setting the loaded property to true will trigger the [onLoad](/documentation/Asset/methods/onLoad) method to be called; assuming it is set."
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

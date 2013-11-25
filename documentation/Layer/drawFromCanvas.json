@@ -1,0 +1,26 @@
+{
+    "className": "Layer",
+    "methodName": "drawFromCanvas",
+
+    "summary": "Draw an image from a HTML5 canvas to the layer.",
+
+    "parameters": [
+        {
+            "name": "canvas",
+            "description": "The HTML5 canvas from which to draw to the layer."
+        },
+        {
+            "name": "x",
+            "description": "The x coordinate where to place the image on the layer."
+        },
+        {
+            "name": "y",
+            "description": "The y coordinate where to place the image on the layer."
+        }
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

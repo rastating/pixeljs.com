@@ -1,0 +1,26 @@
+{
+    "className": "Engine",
+    "methodName": "loadScene",
+
+    "summary": "Loads the prepared components in the layers that are contained within the current scene.",
+
+    "parameters": [
+        {
+            "name": "callback",
+            "description": "The function to invoke when the scene has been loaded."
+        }
+    ],
+    
+    "remarks": [
+        "Loading the scene consists of loading all registered layers and the entities registered to them."
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/88348cf48fead1e43017.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

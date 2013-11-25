@@ -1,0 +1,11 @@
+{
+    "className": "FPSCounter",
+    "propertyName": "fps",
+
+    "summary": "The current FPS reading.",
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

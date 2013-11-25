@@ -1,0 +1,68 @@
+{
+    "className": "Sound",
+
+    "summary": "Represents a sound file.",
+
+    "inheritanceHierarchy": [
+        { "name": "Sound", "isEndPoint": true }
+    ],
+
+    "remarks": [
+        "The supported audio formats, much like the supported image formats, are determined by the executing browser. [Click Here](https://developer.mozilla.org/en-US/docs/HTML/Supported_media_formats?redirectlocale=en-US&redirectslug=Media_formats_supported_by_the_audio_and_video_elements#Browser_compatibility) to see a complete list of the audio formats supported by various browsers."
+    ],
+    
+    "properties": [
+        {
+            "name": "duration",
+            "description": "The length of the media in seconds, or zero if no media data is available.  If the media data is available but the length is unknown, this value is NaN.  If the media is streamed and has no predefined length, the value is Inf."
+        },
+        {
+            "name": "loop",
+            "description": "Reflects the loop HTML attribute, indicating whether the media element should start over when it reaches the end."
+        },
+        {
+            "name": "muted",
+            "description": "```true``` if the audio is muted, and ```false``` otherwise."
+        },
+        {
+            "name": "paused",
+            "description": "Indicates whether the media element is paused."
+        },
+        {
+            "name": "playbackRate",
+            "description": "The current rate at which the media is being played back. This is used to implement user controls for fast forward, slow motion, and so forth. The normal playback rate is multiplied by this value to obtain the current rate, so a value of 1.0 indicates normal speed.\n\nIf the playbackRate is negative, the media is played backwards.\n\nThe audio is muted when the media plays backwards or if the fast forward or slow motion is outside a useful range (E.g. Gecko mute the sound outside the range 0.25 and 5.0).\n\nThe pitch of the audio is corrected by default and is the same for every speed. Some navigators implement the non-standard preservespitch property to control this."
+        },
+        {
+            "name": "volume",
+            "description": "The audio volume, from 0.0 (silent) to 1.0 (loudest)."
+        }
+    ],
+
+    "methods": [
+        {
+            "name": "load",
+            "description": "Loads the sound."
+        },
+        {
+            "name": "pause",
+            "description": "Pause the sound, if it is playing."
+        },
+        {
+            "name": "play",
+            "description": "Play the sound."
+        },
+        {
+            "name": "prepare",
+            "description": "Prepare the information required to load the sound."
+        },
+        {
+            "name": "seek",
+            "description": "Seek to the specified playback time, in seconds."
+        }
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

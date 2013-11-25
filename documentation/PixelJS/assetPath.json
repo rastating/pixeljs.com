@@ -1,0 +1,15 @@
+{
+    "className": "PixelJS",
+    "propertyName": "assetPath",
+
+    "summary": "The path that contains the asset directories",
+
+    "remarks": [
+        "If no path is explicitly set, the default asset path will be set to 'assets'."
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

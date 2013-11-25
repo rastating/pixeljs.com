@@ -1,0 +1,15 @@
+{
+    "className": "AnimatedSprite",
+    "methodName": "stopAnimating",
+
+    "summary": "Stops the sprite animating.",
+
+    "examples": [
+        "https://gist.github.com/rastating/1aa023db5246c9d98bcb.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

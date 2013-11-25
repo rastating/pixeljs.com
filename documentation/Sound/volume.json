@@ -1,0 +1,11 @@
+{
+    "className": "Sound",
+    "propertyName": "volume",
+
+    "summary": "The audio volume, from 0.0 (silent) to 1.0 (loudest).",
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

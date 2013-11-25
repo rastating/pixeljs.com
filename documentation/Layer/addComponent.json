@@ -1,0 +1,22 @@
+{
+    "className": "Layer",
+    "methodName": "addComponent",
+
+    "summary": "Add a component that extends or shares the same interface as an [Entity](/documentation/Entity).",
+
+    "parameters": [
+        {
+            "name": "component",
+            "description": "The [Entity](/documentation/Entity) to add to the layer."
+        }
+    ],
+
+    "examples": [
+        "https://gist.github.com/rastating/0cb4dd005704eeb83fa1.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

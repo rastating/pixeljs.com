@@ -1,0 +1,11 @@
+{
+    "className": "Player",
+    "propertyName": "allowDiagonalMovement",
+
+    "summary": "A boolean value indicating whether to allow diagonal movement.",
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

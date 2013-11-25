@@ -1,0 +1,15 @@
+{
+    "className": "Entity",
+    "propertyName": "layer",
+
+    "summary": "The [Layer](/documentation/Layer) that the entity is registered to.",
+
+    "examples": [
+        "https://gist.github.com/rastating/410aa50e5ad4b80cef8f.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

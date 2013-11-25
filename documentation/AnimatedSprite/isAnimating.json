@@ -1,0 +1,19 @@
+{
+    "className": "AnimatedSprite",
+    "propertyName": "isAnimating",
+
+    "summary": "A read only value that indicates whether or not the sprite is currently animating.",
+
+    "remarks": [
+        "In order to start and stop animations see the [startAnimating](/documentation/AnimatedSprite/methods/startAnimating) and [stopAnimating](/documentation/AnimatedSprite/methods/stopAnimating) methods."
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/68b26b25334f49dcecf5.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

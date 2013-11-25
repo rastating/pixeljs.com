@@ -1,0 +1,22 @@
+{
+    "className": "Asset",
+    "methodName": "draw",
+
+    "summary": "An abstract method with the purpose of drawing the asset to the [Layer](/documentation/Layer) that the owning [Entity](/documentation/Entity) exists on.",
+
+    "parameters": [
+        {
+            "name": "entity",
+            "description": "The [Entity](/documentation/Entity) that the asset being drawn should represent."
+        }
+    ],
+    
+    "remarks": [
+        "No implementation is present for this method and must be implemented in classes which derive from Asset."
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "className": "Engine",
+    "methodName": "loadAndRun",
+
+    "summary": "Loads all registered components that have been prepared and then runs the game loop.",
+
+    "parameters": [
+        {
+            "name": "gameLoop",
+            "description": "The game loop to start after loading the prepared components."
+        }
+    ],
+    
+    "remarks": [
+        "All registered layers (and the entities registered to them), as well as registered sounds will all be asynchronously loaded. After each component has been successfully loaded the gameLoop function will be executed as if passed directly to the [run](/documentation/Engine/methods/run) method."
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/a2fd39a5aff57d8ee03f.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

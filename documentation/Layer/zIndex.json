@@ -1,0 +1,15 @@
+{
+    "className": "Layer",
+    "propertyName": "zIndex",
+
+    "summary": "The z-index of the layer.",
+
+    "examples": [
+        "https://gist.github.com/rastating/e71c70df5c6699137074.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

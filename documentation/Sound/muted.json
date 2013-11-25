@@ -1,0 +1,15 @@
+{
+    "className": "Sound",
+    "propertyName": "muted",
+
+    "summary": "```true``` if the audio is muted, and ```false``` otherwise.",
+    
+    "examples": [
+        "https://gist.github.com/rastating/ba5e52aa1817545f175e.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

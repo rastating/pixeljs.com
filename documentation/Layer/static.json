@@ -1,0 +1,19 @@
+{
+    "className": "Layer",
+    "propertyName": "static",
+
+    "summary": "A boolean value indicating whether or not the layer is static and should only be drawn once.",
+
+    "remarks": [
+        "If a layer is set as static it will only be drawn once unless the [redraw](/documentation/Layer/properties/redraw) property is set to true."
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/16781c5166c1fddbdb5a.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

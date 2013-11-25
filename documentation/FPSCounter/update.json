@@ -1,0 +1,22 @@
+{
+    "className": "FPSCounter",
+    "methodName": "update",
+
+    "summary": "Recalculates the number of frames per second.",
+
+    "parameters": [
+        {
+            "name": "elapsedTime",
+            "description": "The time in milliseconds that has passed since the game started."
+        },
+        {
+            "name": "dt",
+            "description": "The time in fractional seconds since the last iteration of the game loop."
+        }
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

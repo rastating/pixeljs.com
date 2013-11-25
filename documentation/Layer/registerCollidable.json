@@ -1,0 +1,22 @@
+{
+    "className": "Layer",
+    "methodName": "registerCollidable",
+
+    "summary": "Register a collidable [Entity](/documentation/Entity).",
+
+    "parameters": [
+        {
+            "name": "collidable",
+            "description": "The collidable component to register."
+        }
+    ],
+
+    "examples": [
+        "https://gist.github.com/rastating/9d6f75addceb716f526b.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

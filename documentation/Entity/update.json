@@ -1,0 +1,26 @@
+{
+    "className": "Entity",
+    "methodName": "update",
+
+    "summary": "An abstract method with the purpose of updating the entity's state.",
+
+    "parameters": [
+        {
+            "name": "elapsedTime",
+            "description": "The time in milliseconds that has passed since the game started."
+        },
+        {
+            "name": "dt",
+            "description": "The time in fractional seconds since the last iteration of the game loop."
+        }
+    ],
+    
+    "remarks": [
+        "No implementation is present for this method and must be implemented in classes which derive from Entity."
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

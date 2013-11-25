@@ -1,0 +1,22 @@
+{
+    "className": "Engine",
+    "methodName": "init",
+
+    "summary": "Initialises the game scene.",
+
+    "parameters": [
+        {
+            "name": "info",
+            "description": "An object containing the following properties: \n*    **container:** the element that will contain the canvases created by Pixel.js.\n*    **width:** the width of the game scene.\n*    **height:** the height of the game scene.\n*    **maxDeltaTime (Optional):** the maximum amount of time in milliseconds that should be applied when calculating the time between iterations of the game loop."
+        }
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/ae93850fbffa61ba8ce1.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

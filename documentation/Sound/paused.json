@@ -1,0 +1,15 @@
+{
+    "className": "Sound",
+    "propertyName": "paused",
+
+    "summary": "Indicates whether the media element is paused.",
+    
+    "examples": [
+        "https://gist.github.com/rastating/d56426177877bc040f83.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

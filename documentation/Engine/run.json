@@ -1,0 +1,22 @@
+{
+    "className": "Engine",
+    "methodName": "run",
+
+    "summary": "Starts running the game loop.",
+
+    "parameters": [
+        {
+            "name": "gameLoop",
+            "description": "The game loop to start."
+        }
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/5812417a834be625e139.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

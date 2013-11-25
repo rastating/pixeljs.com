@@ -1,0 +1,15 @@
+{
+    "className": "Entity",
+    "propertyName": "pos",
+
+    "summary": "The position of the entity on screen relative to the top-left corner of the scene.",
+
+    "examples": [
+        "https://gist.github.com/rastating/0cb31e431aeb441aeb31.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "className": "Sound",
+    "methodName": "seek",
+
+    "summary": "Seek to the specified playback time, in seconds.",
+
+    "parameters": [
+        {
+            "name": "time",
+            "description": "The current playback time, in seconds."
+        }
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/77b611abbe3610694ac3.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

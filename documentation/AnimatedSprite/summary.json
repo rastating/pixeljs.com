@@ -1,0 +1,74 @@
+{
+    "className": "AnimatedSprite",
+
+    "summary": "Represents an animated sprite that can be used as an [Asset](/documentation/Asset) for an [Entity](/documentation/Entity).",
+
+    "inheritanceHierarchy": [
+        { "name": "Asset" },
+        { "name": "Sprite" },
+        { "name": "AnimatedSprite", "isEndPoint": true }
+    ],
+
+    "remarks": [
+        "The AnimatedSprite class is a derivative of the [Asset](/documentation/Asset) class and provides the functionality required to turn a sprite sheet into an animation.",
+
+        "By default, the sprite will begin animation as soon as it is loaded and will have an animation speed of 0.2."
+    ],
+    
+    "properties": [
+        {
+            "name": "defaultFrame",
+            "description": "The index of the frame to display when the sprite is not animating."
+        },
+        {
+            "name": "isAnimating",
+            "description": "A read only value that indicates whether or not the sprite is currently animating."
+        },
+        {
+            "name": "loaded",
+            "description": "A boolean value indicating whether or not the asset has been loaded.",
+            "inheritedFrom": "Asset"
+        },
+        {
+            "name": "startAnimating",
+            "description": "Start animating the sprite until [stopAnimating](/documentation/AnimatedSprite/methods/stopAnimating) is called."
+        },
+        {
+            "name": "row",
+            "description": "The row number of frames to animate between."
+        },
+        {
+            "name": "speed",
+            "description": "The time in milliseconds that must pass before the next frame of an animation is loaded."
+        }
+    ],
+
+    "methods": [
+        {
+            "name": "draw",
+            "description": "Draws the asset to the [Layer](/documentation/Layer) that the owning [Entity](/documentation/Entity) exists on. (Overrides [Asset.draw](/documentation/Asset/methods/draw).)"
+        },
+        {
+            "name": "load",
+            "description": "Loads the asset. (Overrides [Asset.load](/documentation/Asset/methods/load).)"
+        },
+        {
+            "name": "prepare",
+            "description": "Prepare the information required to load the asset.",
+            "inheritedFrom": "Asset"
+        },
+        {
+            "name": "startAnimating",
+            "description": "Start animating the sprite until [stopAnimating](/documentation/AnimatedSprite/methods/stopAnimating) is called."
+        },
+        {
+            "name": "stopAnimating",
+            "description": "Stops the sprite animating."
+        }
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": "In addition to these tested browsers, the AnimatedSprite class is supported by any browser that supports the HTML5 canvas."
+    }
+}

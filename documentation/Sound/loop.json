@@ -1,0 +1,15 @@
+{
+    "className": "Sound",
+    "propertyName": "loop",
+
+    "summary": "Reflects the loop HTML attribute, indicating whether the media element should start over when it reaches the end.",
+    
+    "examples": [
+        "https://gist.github.com/rastating/47e60a7dd71cefcb5ee0.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "className": "Layer",
+    "methodName": "draw",
+
+    "summary": "Draw the layer and all its components to the screen.",
+
+    "remarks": [
+        "The draw method shouldn't need to be called manually as it is automatically called for all registered layers."
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "className": "Layer",
+
+    "summary": "Represents a game scene layer.",
+
+    "inheritanceHierarchy": [
+        { "name": "Layer", "isEndPoint": true }
+    ],
+
+    "remarks": [
+        "Layers are used to encapsulate game entities and components with the purpose of building the game scene."
+    ],
+    
+    "properties": [
+        {
+            "name": "engine",
+            "description": "The [Engine](/documentation/Engine) that the layer belongs to."
+        },
+        {
+            "name": "redraw",
+            "description": "A boolean value indicating whether or not the layer should be redrawn when the next frame is rendered."
+        },
+        {
+            "name": "static",
+            "description": "A boolean value indicating whether or not the layer is static and should only be drawn once."
+        },
+        {
+            "name": "visible",
+            "description": "A boolean value indicating whether or not the layer is visible."
+        },
+        {
+            "name": "zIndex",
+            "description": "The z-index of the layer."
+        }
+    ],
+
+    "methods": [
+        {
+            "name": "addComponent",
+            "description": "Add a component that extends or shares the same interface as an [Entity](/documentation/Entity)."
+        },
+        {
+            "name": "createEntity",
+            "description": "Create and register a new [Entity](/documentation/Entity)."
+        },
+        {
+            "name": "draw",
+            "description": "Draw the layer and all its components to the screen."
+        },
+        {
+            "name": "drawFromCanvas",
+            "description": "Draw an image from a HTML5 canvas to the layer."
+        },
+        {
+            "name": "drawImage",
+            "description": "Draw an image to the layer."
+        },
+        {
+            "name": "drawText",
+            "description": "Draw text on the layer."
+        },
+        {
+            "name": "load",
+            "description": "Load all the components registered to the layer."
+        },
+        {
+            "name": "registerCollidable",
+            "description": "Register a collidable [Entity](/documentation/Entity)."
+        },
+        {
+            "name": "update",
+            "description": "Call the update method for all the registered components."
+        }
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

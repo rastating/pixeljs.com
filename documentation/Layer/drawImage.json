@@ -1,0 +1,26 @@
+{
+    "className": "Layer",
+    "methodName": "drawImage",
+
+    "summary": "Draw an image to the layer.",
+
+    "parameters": [
+        {
+            "name": "img",
+            "description": "The image to draw to the layer."
+        },
+        {
+            "name": "x",
+            "description": "The x coordinate where to place the image on the layer."
+        },
+        {
+            "name": "y",
+            "description": "The y coordinate where to place the image on the layer."
+        }
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}
