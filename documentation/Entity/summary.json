@@ -33,8 +33,24 @@
             "description": "A boolean value indicating whether the entity can be moved upwards."
         },
         {
+            "name": "dragButton",
+            "description": "The [Mouse Button](/documentation/PixelJS/properties/Buttons) to be used to drag the entity."
+        },
+        {
+            "name": "isClickable",
+            "description": "A boolean value indicating whether the entity should react to being clicked by the mouse."
+        },
+        {
             "name": "isCollidable",
             "description": "A boolean value indicating whether the entity can collide with other collidable entities."
+        },
+        {
+            "name": "isDraggable",
+            "description": "A boolean value indicating whether the entity can be dragged by the mouse."
+        },
+        {
+            "name": "isDragging",
+            "description": "A boolean value indicating whether the entity is being dragged."
         },
         {
             "name": "layer",
@@ -90,6 +106,22 @@
         {
             "name": "onCollide",
             "description": "The function to be called when the entity has collided with another entity."
+        },
+        {
+            "name": "onDrag",
+            "description": "The function to be called when the entity is being dragged by the mouse."
+        },
+        {
+            "name": "onDrop",
+            "description": "The function to be called when the entity has stopped being dragged."
+        },
+        {
+            "name": "onMouseDown",
+            "description": "The function to be called when a mouse button is pressed down on the entity."
+        },
+        {
+            "name": "onMouseUp",
+            "description": "The function to be called when a mouse button is released after being pressed down on an entity."
         },
         {
             "name": "update",

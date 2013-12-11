@@ -1,0 +1,15 @@
+{
+    "className": "PixelJS",
+    "propertyName": "Buttons",
+
+    "summary": "A set of properties to identify the mouse buttons that have been pressed or released.",
+    
+    "examples": [
+        "https://gist.github.com/rastating/5a0535433738ed8e87e7.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

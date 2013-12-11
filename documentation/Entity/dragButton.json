@@ -1,0 +1,15 @@
+{
+    "className": "Entity",
+    "propertyName": "dragButton",
+
+    "summary": "The [Mouse Button](/documentation/PixelJS/properties/Buttons) to be used to drag the entity.",
+    
+    "examples": [
+        "https://gist.github.com/rastating/ff3594bd2d0f69aa53e1.js"
+    ],
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

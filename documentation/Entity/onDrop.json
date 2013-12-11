@@ -1,0 +1,15 @@
+{
+    "className": "Entity",
+    "methodName": "onDrop",
+
+    "summary": "The function to be called when the entity has stopped being dragged.",
+    
+    "examples": [
+        "https://gist.github.com/rastating/cd5b276f501da004253f.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

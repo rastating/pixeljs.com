@@ -16,7 +16,7 @@
     ],
     
     "remarks": [
-        "The events currently supported by the on method are:\n*    **keyDown(keyCode):** occurs when the user presses a key down.\n*    **keyUp(keyCode):** occurs when the user releases a key press.",
+        "The events currently supported by the on method are:\n*    **keyDown(keyCode):** occurs when the user presses a key down.\n*    **keyUp(keyCode):** occurs when the user releases a key press.\n*    **mouseup(point, button):** occurs when the user releases a mouse button.\n*    **mousedown(point, button):** occurs when the user presses a mouse button.\n*    **mousemove(point):** occurs when the user moves the mouse.",
         "Multiple event handlers can be assigned to a single event if desired."
     ],
     

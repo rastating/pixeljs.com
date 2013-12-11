@@ -18,6 +18,10 @@
             "description": "The path that contains the asset directories"
         },
         {
+            "name": "Buttons",
+            "description": "A set of properties to identify the mouse buttons that have been pressed or released."
+        },
+        {
             "name": "Directions",
             "description": "A set of properties to identify the direction an entity is moving in."
         },
