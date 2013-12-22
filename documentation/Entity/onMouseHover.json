@@ -1,0 +1,15 @@
+{
+    "className": "Entity",
+    "methodName": "onMouseHover",
+
+    "summary": "Registers the callback to be invoked when the mouse is hovered over the entity.",
+    
+    "examples": [
+        "https://gist.github.com/rastating/a828b98566f512fd58e1.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

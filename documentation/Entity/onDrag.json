@@ -2,10 +2,10 @@
     "className": "Entity",
     "methodName": "onDrag",
 
-    "summary": "The function to be called when the entity is being dragged by the mouse.",
+    "summary": "Registers the callback to be invoked when the entity is being dragged by the mouse.",
     
     "examples": [
-        "https://gist.github.com/rastating/0f936e1660b6add72e63.js"
+        "https://gist.github.com/rastating/f0ef312f93dada9f4b8b.js"
     ],
 
     "platforms": {

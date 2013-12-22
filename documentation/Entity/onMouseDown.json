@@ -2,10 +2,10 @@
     "className": "Entity",
     "methodName": "onMouseDown",
 
-    "summary": "The function to be called when a mouse button is pressed down on the entity.",
+    "summary": "Registers the callback to be invoked when a mouse button is pressed down on the entity.",
     
     "examples": [
-        "https://gist.github.com/rastating/291cf73de8a5a9905ab7.js"
+        "https://gist.github.com/rastating/9f65838eb89fd69ce185.js"
     ],
 
     "platforms": {

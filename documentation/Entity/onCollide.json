@@ -2,14 +2,14 @@
     "className": "Entity",
     "methodName": "onCollide",
 
-    "summary": "The function to be called when the entity has collided with another entity.",
+    "summary": "Registers the callback to be invoked when the entity has collided with another entity.",
     
     "remarks": [
         "The parameter passed to the function is the entity that caused the collision."
     ],
     
     "examples": [
-        "https://gist.github.com/rastating/810f8675e15a848ac898.js"
+        "https://gist.github.com/rastating/129dc20261aef80b7206.js"
     ],
 
     "platforms": {

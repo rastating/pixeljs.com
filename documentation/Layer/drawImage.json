@@ -16,6 +16,14 @@
         {
             "name": "y",
             "description": "The y coordinate where to place the image on the layer."
+        },
+        {
+            "name": "rotation",
+            "description": "The angle (in degrees) in which to rotate the image. A value of ```0``` or ```undefined``` will stop the image being rotated at all."
+        },
+        {
+            "name": "opacity",
+            "description": "The opacity at which to draw the image. A value of ```1.0``` draws the image at full opacity, a value of ```0``` would be completely opaque."
         }
     ],
 

@@ -29,7 +29,7 @@
         },
         {
             "name": "onLoad",
-            "description": "The function to be called when the asset has finished loading."
+            "description": "Registers the callback to be invoked when the asset has finished loading."
         },
         {
             "name": "prepare",

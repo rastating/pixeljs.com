@@ -5,7 +5,7 @@
     "summary": "A boolean value indicating whether the entity can collide with other collidable entities.",
     
     "remarks": [
-        "Setting this property to true will register it is a collidable on the owning [Layer](/documentation/Layer) by calling the [registerCollidable](/documentation/Layer/methods/registerCollidable) method."
+        "Setting this property to true will register it as a collidable on the owning [Layer](/documentation/Layer) by calling the [registerCollidable](/documentation/Layer/methods/registerCollidable) method."
     ],
     
     "examples": [

@@ -2,10 +2,10 @@
     "className": "Entity",
     "methodName": "onMouseUp",
 
-    "summary": "The function to be called when a mouse button is released after being pressed down on an entity.",
+    "summary": "Registers the callback to be invoked when a mouse button is released after being pressed down on an entity.",
     
     "examples": [
-        "https://gist.github.com/rastating/65844513a601396df4f9.js"
+        "https://gist.github.com/rastating/76a3a66b9a18bcf41258.js"
     ],
 
     "platforms": {

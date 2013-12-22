@@ -105,23 +105,27 @@
         },
         {
             "name": "onCollide",
-            "description": "The function to be called when the entity has collided with another entity."
+            "description": "Registers the callback to be invoked when the entity has collided with another entity."
         },
         {
             "name": "onDrag",
-            "description": "The function to be called when the entity is being dragged by the mouse."
+            "description": "Registers the callback to be invoked when the entity is being dragged by the mouse."
         },
         {
             "name": "onDrop",
-            "description": "The function to be called when the entity has stopped being dragged."
+            "description": "Registers the callback to be invoked when the entity has stopped being dragged."
         },
         {
             "name": "onMouseDown",
-            "description": "The function to be called when a mouse button is pressed down on the entity."
+            "description": "Registers the callback to be invoked when a mouse button is pressed down on the entity."
+        },
+        {
+            "name": "onMouseHover",
+            "description": "Registers the callback to be invoked when the mouse is hovered over the entity."
         },
         {
             "name": "onMouseUp",
-            "description": "The function to be called when a mouse button is released after being pressed down on an entity."
+            "description": "Registers the callback to be invoked when a mouse button is released after being pressed down on an entity."
         },
         {
             "name": "update",
