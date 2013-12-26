@@ -35,6 +35,10 @@
         {
             "name": "extend",
             "description": "Copies the prototype of one class to another."
+        },
+        {
+            "name": "proxy",
+            "description": "Invokes a function within a specified context."
         }
     ],
 

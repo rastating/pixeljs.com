@@ -1,0 +1,26 @@
+{
+    "className": "Engine",
+    "methodName": "off",
+
+    "summary": "Removes a function that was hooked using the [on](/documentation/Engine/methods/on) function.",
+
+    "parameters": [
+        {
+            "name": "event",
+            "description": "The name of the event that the function was hooked to."
+        },
+        {
+            "name": "callback",
+            "description": "The function to unhook."
+        }
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/737cbdf77b08c8fc4de8.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

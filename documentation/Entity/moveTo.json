@@ -1,0 +1,34 @@
+{
+    "className": "Entity",
+    "methodName": "moveTo",
+
+    "summary": "Moves the entity to a new position.",
+    
+    "parameters": [
+        {
+            "name": "x",
+            "description": "The x coordinate to move the entity to."
+        },
+        {
+            "name": "y",
+            "description": "The y coordinate to move the entity to."
+        },
+        {
+            "name": "duration",
+            "description": "**Optional:** the time in milliseconds that it should take for the entity to reach its destination; or ```0``` / ```undefined``` to have an instant movement."
+        },
+        {
+            "name": "callback",
+            "description": "**Optional:** the function to be called when the entity has finished moving to its new position."
+        }
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/36e016ae2c25be7f8850.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "className": "Entity",
+    "propertyName": "opacity",
+
+    "summary": "A decimal value between ```0``` and ```1``` representing the opacity of the entity; ```0``` being completely opaque and ```1``` being completely visible.",
+    
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

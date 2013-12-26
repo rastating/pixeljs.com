@@ -57,6 +57,10 @@
             "description": "The [Layer](/documentation/Layer) that the entity is registered to."
         },
         {
+            "name": "opacity",
+            "description": "A decimal value between ```0``` and ```1``` representing the opacity of the entity; ```0``` being completely opaque and ```1``` being completely visible."
+        },
+        {
             "name": "pos",
             "description": "The position of the entity on screen relative to the top-left corner of the scene."
         },
@@ -84,8 +88,16 @@
             "description": "Checks if the entity collides with another entity."
         },
         {
+            "name": "dispose",
+            "description": "Removes all internal references to the entity allowing for it to be destroyed by the owning application and collected by the garbage collector."
+        },        
+        {
             "name": "draw",
             "description": "Calls the draw method of the assigned [Asset](/documentation/Asset)."
+        },
+        {
+            "name": "fadeTo",
+            "description": "Fades the entity to a new opacity level."
         },
         {
             "name": "moveDown",
@@ -98,6 +110,10 @@
         {
             "name": "moveRight",
             "description": "Moves the entity right based on the [velocity](/documentation/Entity/properties/velocity) of the entity and the [deltaTime](/documentation/Engine/properties/deltaTime) since the last update."
+        },
+        {
+            "name": "moveTo",
+            "description": "Moves the entity to a new position."
         },
         {
             "name": "moveUp",

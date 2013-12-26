@@ -64,6 +64,10 @@
             "description": "Loads the prepared sounds that are currently registered."
         },
         {
+            "name": "off",
+            "description": "Removes a function that was hooked using the [on](/documentation/Engine/methods/on) function."
+        },
+        {
             "name": "on",
             "description": "Hooks a function to the specified event."
         },

@@ -1,0 +1,19 @@
+{
+    "className": "Entity",
+    "methodName": "dispose",
+
+    "summary": "Removes all internal references to the entity allowing for it to be destroyed by the owning application and collected by the garbage collector.",
+    
+    "examples": [
+        "https://gist.github.com/rastating/4122c55697ed17b28a32.js"
+    ],
+    
+    "remarks": [
+        "In addition to calling ```dispose```, the entity will need to be set to null afterwards in order to be collected by most browsers."
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

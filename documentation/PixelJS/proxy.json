@@ -1,0 +1,30 @@
+{
+    "className": "PixelJS",
+    "methodName": "proxy",
+
+    "summary": "Invokes a function within a specified context.",
+
+    "parameters": [
+        {
+            "name": "callback",
+            "description": "The function to be invoked."
+        },
+        {
+            "name": "context",
+            "description": "The object that should be assigned to the ```this``` object when invoking the function."
+        },
+        {
+            "name": "additionalArguments",
+            "description": "***Optional:*** an array of arguments to be passed to the function."
+        }
+    ],
+
+    "examples": [
+        "https://gist.github.com/rastating/0b7a4c8b6021133b5abf.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}

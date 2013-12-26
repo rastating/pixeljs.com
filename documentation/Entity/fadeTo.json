@@ -1,0 +1,30 @@
+{
+    "className": "Entity",
+    "methodName": "fadeTo",
+
+    "summary": "Fades the entity to a new opacity level.",
+    
+    "parameters": [
+        {
+            "name": "opacity",
+            "description": "The new opacity to apply to the entity."
+        },
+        {
+            "name": "duration",
+            "description": "***Optional:*** the time in milliseconds that it should take for the entity to reach its new opacity level; or ```0``` / ```undefined``` to change it immediately."
+        },
+        {
+            "name": "callback",
+            "description": "**Optional:** the function to be called when the entity has finished changing opacity."
+        }
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/c9d881ebc13ab3908ccb.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}
