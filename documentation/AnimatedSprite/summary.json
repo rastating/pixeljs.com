@@ -34,6 +34,10 @@
             "description": "Start animating the sprite until [stopAnimating](/documentation/AnimatedSprite/methods/stopAnimating) is called."
         },
         {
+            "name": "resetFrame",
+            "description": "The index of the last frame in the animation."
+        },
+        {
             "name": "row",
             "description": "The row number of frames to animate between."
         },

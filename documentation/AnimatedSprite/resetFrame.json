@@ -1,0 +1,19 @@
+{
+    "className": "AnimatedSprite",
+    "propertyName": "resetFrame",
+
+    "summary": "The index of the last frame in the animation.",
+
+    "remarks": [
+        "If no value is explicitly defined as the reset frame, it will default to the maximum number of frames in the spritesheet."
+    ],
+    
+    "examples": [
+        "https://gist.github.com/rastating/85f14ba3a55e9a4bdd3f.js"
+    ],
+
+    "platforms": {
+        "names": "Google Chrome, Mozilla FireFox, Internet Explorer 9+, Opera, Safari.",
+        "notes": ""
+    }
+}
